@@ -3,5 +3,14 @@
 
 // Overrides
 a {
-    text-decoration: none !important;
+  color: rgb(10, 100, 80);
+  font-weight: bold;
+
+  &:hover {
+    color: rgb(0, 90, 70);
+  }
+
+  &:not(.underline) {
+    text-decoration: none;
+  }
 }
