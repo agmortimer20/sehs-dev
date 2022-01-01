@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 3.5 Useful Array Functions"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 3.5 Useful Array Functions
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 5.1 JavaScript Objects"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 5.1 JavaScript Objects
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 2.4 Compount Boolean Expressions
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 2.4 Compound Boolean Expressions
 

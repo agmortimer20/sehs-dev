@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 1.8 Constants, Math Functions, and Random Numbers
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 1.8 Constants, Math Functions, and Random Numbers
 

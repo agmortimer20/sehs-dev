@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 2.8 Rock, Paper, Scissors Game
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 2.8 Rock, Paper, Scissors Game
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals "
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 1.3 String Formatting
 

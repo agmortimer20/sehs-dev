@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 1.2 Math and Comments
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python)
 
 # Activity 1.2 Math and Comments
 

@@ -4,7 +4,7 @@ layout: "../../../layouts/PageLayout.astro"
 title: Code Challenge 10 - Dungeon Crawler
 ---
 
-[← Back](./)
+[← Back](/comp-sci/code-challenges/)
 
 # Code Challenge 10 - Dungeon Crawler
 

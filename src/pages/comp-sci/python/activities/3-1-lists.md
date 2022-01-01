@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 3.1 Lists
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 3.1 Lists
 

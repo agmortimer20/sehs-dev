@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 3.3 Lists and For Loops
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 3.3 For Loops
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 1.7 Prompting for Numerical Input
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 1.7 Prompting for Numerical Input
 

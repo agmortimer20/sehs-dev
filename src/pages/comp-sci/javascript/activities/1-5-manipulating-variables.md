@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 1.5 Manipulating Variables"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 1.5 Manipulating Variables
 

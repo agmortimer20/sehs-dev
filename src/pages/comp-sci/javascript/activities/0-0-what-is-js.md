@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals Introduction - What is JavaScript?"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # What are JavaScript and Node.js?
 

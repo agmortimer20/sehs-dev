@@ -4,7 +4,7 @@ layout: "../../../layouts/PageLayout.astro"
 title: Code Challenge 16 - Raffle
 ---
 
-[← Back](./)
+[← Back](/comp-sci/code-challenges/)
 
 # Code Challenge 16 - Raffle
 

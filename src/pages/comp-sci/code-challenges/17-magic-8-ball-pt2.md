@@ -4,7 +4,7 @@ layout: "../../../layouts/PageLayout.astro"
 title: Code Challenge 17 - Magic 8-Ball Part 2
 ---
 
-[← Back](./)
+[← Back](/comp-sci/code-challenges/)
 
 # Code Challenge 17 - Magic 8-Ball Part 2
 

@@ -4,7 +4,7 @@ layout: "../../../layouts/PageLayout.astro"
 title: Code Challenge 18 - Shopping Cart
 ---
 
-[← Back](./)
+[← Back](/comp-sci/code-challenges/)
 
 # Code Challenge 18 - Shopping Cart
 

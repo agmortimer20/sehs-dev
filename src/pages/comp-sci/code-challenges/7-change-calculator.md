@@ -4,7 +4,7 @@ layout: "../../../layouts/PageLayout.astro"
 title: Code Challenge 7 - Change Calculator
 ---
 
-[← Back](./)
+[← Back](/comp-sci/code-challenges/)
 
 # Code Challenge 7 - Change Calculator
 

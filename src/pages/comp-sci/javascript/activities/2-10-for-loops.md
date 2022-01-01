@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 2.10 For Loops"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 2.10 For Loops
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 4.3 Function Return Statements"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 4.3 Function Return Statements
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 3.2 Lists and While Loops
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 3.2 Lists and While Loops
 

@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 1.4 Variables"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 1.4 Variables
 

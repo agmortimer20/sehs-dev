@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 2.7 While Loops"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 2.7 While Loops
 

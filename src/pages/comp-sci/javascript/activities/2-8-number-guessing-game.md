@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 2.8 Number Guessing Game"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 2.8 Number Guessing Game
 

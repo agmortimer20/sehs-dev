@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 2.9 Rock, Paper, Scissors Game"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 2.9 Rock, Paper, Scissors Game
 

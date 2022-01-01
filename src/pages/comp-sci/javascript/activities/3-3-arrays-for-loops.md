@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 3.3 Arrays and For Loops"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 3.3 Arrays and For Loops
 

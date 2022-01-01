@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 2.1 Logic Crash Course"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 2.1 Logic Crash Course
 

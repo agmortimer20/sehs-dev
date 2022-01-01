@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 2.5 Nested If Statements
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 2.5 Nested If Statements
 

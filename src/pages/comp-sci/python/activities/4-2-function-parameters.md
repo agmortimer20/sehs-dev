@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 4.2 Function Parameters
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 4.2 Function Parameters
 

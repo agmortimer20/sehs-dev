@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 2.3 Branching Statements
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 2.3 Branching Statements
 

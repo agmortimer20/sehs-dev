@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 1.1 Hello World"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 1.1 Hello World!
 

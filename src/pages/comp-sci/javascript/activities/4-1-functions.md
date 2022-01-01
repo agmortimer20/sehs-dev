@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 4.1 Function Basics"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 4.1 Function Basics
 

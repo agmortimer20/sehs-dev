@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: "JavaScript Fundamentals 4.2 Function Parameters"
 ---
 
-[← Back](../)
+[← Back](/comp-sci/javascript/)
 
 # Activity 4.2 Function Parameters
 

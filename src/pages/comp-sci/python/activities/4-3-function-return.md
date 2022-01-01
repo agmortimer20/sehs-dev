@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 4.3 Function Return Statements
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 4.3 Return Statements
 

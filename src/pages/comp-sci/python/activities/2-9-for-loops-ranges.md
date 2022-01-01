@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 2.9 For Loops and Ranges
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 2.9 For Loops and Ranges
 

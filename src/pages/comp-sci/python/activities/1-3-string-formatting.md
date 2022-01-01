@@ -4,7 +4,7 @@ layout: "../../../../layouts/PageLayout.astro"
 title: Python Fundamentals 1.3 String Formatting
 ---
 
-[← Back](../)
+[← Back](/comp-sci/python/)
 
 # Activity 1.3 String Formatting
 
