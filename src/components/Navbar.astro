@@ -1,0 +1,75 @@
+---
+let { margin = "3" } = Astro.props
+---
+
+<nav class=`navbar navbar-expand-lg navbar-dark bg-dark mb-${margin}`>
+  <div class="container-fluid">
+    <a href="/" class="navbar-brand font-monospace">
+      <img src="/assets/img/eds-logo-128px.png" width="40px" class="d-inline-block align-text-top">
+      Sehs Dev:<span class="eds-green">~$</span><span class="cursor font-monospace"> _</span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Course Content
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="/comp-sci/javascript/"
+                >JavaScript Fundamentals</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/comp-sci/python/"
+                >Python Fundamentals</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/comp-sci/code-challenges/"
+                >Code Challenges</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  @keyframes cursor {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .eds-green {
+    color: #0e8b70;
+  }
+
+  .cursor {
+    animation: cursor 1s none infinite;
+  }
+</style>

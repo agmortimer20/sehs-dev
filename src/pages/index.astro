@@ -1,0 +1,85 @@
+---
+import CourseCard from '../components/CourseCard.astro';
+import LogoAnimation from '../components/LogoAnimation.astro';
+import PageLayout from '../layouts/PageLayout.astro';
+import RandomQuote from '../components/RandomQuote.svelte';
+---
+
+<PageLayout title="Home" navMargin="0">
+	<!-- Jumbotron -->
+	<div class="p-4 mb-5 bg-light">
+		<h1 class="text-center display-5 fw-bold">
+			St. Ed's Computer Science and Electrical Engineering
+		</h1>
+		<LogoAnimation/>
+		<RandomQuote alignment="center"/>
+	</div>
+
+	<div class="container">
+		<!-- Courses -->
+		<h2 class="text-center mb-5">Course Content</h2>
+
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<CourseCard 
+					link="/comp-sci/python/" 
+					title="Python Fundamentals" 
+					img="/assets/img/python-course-card.png" 
+					units="4 units" 
+					difficulty="🐣Beginner" 
+					category="Computer Science"
+				/>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<CourseCard 
+					link="/comp-sci/javascript/" 
+					title="JavaScript Fundamentals" 
+					img="/assets/img/javascript-course-card.png" 
+					units="4 units" 
+					difficulty="🐣Beginner"
+					category="Computer Science"
+				/>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<CourseCard 
+					link="/comp-sci/code-challenges/" 
+					title="Code Challenges" 
+					img="/assets/img/challenge-course-card.png" 
+					units="18 challenges" 
+					difficulty="All Levels"
+					category="Computer Science"
+				/>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<CourseCard 
+					link="#" 
+					title="Tkinter Fundamentals" 
+					img="/assets/img/tkinter-course-card.png" 
+					units="n Units" 
+					difficulty="🐥Intermediate"
+					category="Computer Science"
+				/>
+			</div>
+		</div>
+
+		<hr class="mb-4">
+
+		<!-- Guides and Utilities -->
+		<div class="row justify-content-center mb-5">
+			<!-- Guides -->
+			<div class="col-sm-12 col-md-4">
+				<h2 class="text-center mb-4">Guides</h2>
+			</div>
+
+			<!-- Utilities -->
+			<div class="col-sm-12 col-md-4">
+				<h2 class="text-center mb-4">Utilities</h2>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						<a href="utilities/rgb-color-picker">🎨 RGB Color Picker</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</PageLayout>

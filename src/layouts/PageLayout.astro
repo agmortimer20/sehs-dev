@@ -1,0 +1,31 @@
+---
+    import Navbar from '../components/Navbar.astro'
+
+    let { 
+        title = "",
+        container = "",
+        content = {},
+        navMargin = "3"
+    } = Astro.props
+
+    let dotMin = process.env['NODE_ENV'] !== "development" ? ".min" : "";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.scss')}>
+    <title>{'title' in content ? content.title : title} | Sehs.Dev</title>
+    <script src=`/assets/js/prism${dotMin}.js` defer></script>
+    <script src={Astro.resolve(`../../node_modules/bootstrap/dist/js/bootstrap.bundle${dotMin}.js`)} defer></script>
+</head>
+<body class="line-numbers match-braces">
+    <Navbar margin={navMargin} />
+    <div class={'container' in content ? content.container : container}>
+        <slot/>
+    </div>
+</body>
+</html>

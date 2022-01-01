@@ -1,0 +1,28 @@
+---
+    import ColorPicker from '../../components/ColorPicker.svelte';
+    import PageLayout from '../../layouts/PageLayout.astro';
+    
+    let content = {
+        title: "RGB Color Picker"
+    }
+---
+
+<PageLayout content={content}>
+    <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-auto">
+            <img src="/assets/img/rgb-icon.png" class="img-title" />
+        </div>
+        <div class="col-auto">
+            <h1 class="text-center display-5">RGB Color Picker</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <ColorPicker client:load />
+    </div>
+</PageLayout>
+
+<style>
+    .img-title {
+        max-width: 125px;
+    }
+</style>

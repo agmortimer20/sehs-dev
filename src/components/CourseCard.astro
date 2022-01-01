@@ -1,0 +1,40 @@
+---
+    let { 
+        link = "#",
+        img, 
+        title, 
+        difficulty = "", 
+        units = "", 
+        category } = Astro.props
+---
+
+<div class="card mb-4 card-shadow">
+    <a href={link}>
+        <img src={img} class="card-img-top" alt={title} />
+    </a>
+    <div class="card-body">
+        <h4 class="mb-2 card-title text-truncate">
+            <a href={link} class="text-decoration-none text-reset">
+                {title}
+            </a>
+        </h4>
+        <ul class="list-inline text-muted">
+            <li class="list-inline-item">{units}</li>
+            <li class="list-inline-item">{difficulty}</li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <span class="text-muted">{category}</span>
+    </div>
+</div>
+
+<style>
+    .card {
+        box-shadow: none;
+        transition: box-shadow 0.25s ease;
+    }
+
+    .card-shadow:hover {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    }
+</style>
