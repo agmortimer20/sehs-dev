@@ -6,15 +6,9 @@ title: "JavaScript Fundamentals"
 
 [← Back](/)
 
-# JavaScript
+# JavaScript Fundamentals
 
 ---
-
-## Code Challenges
-
-[Go to Challenges →](/comp-sci/code-challenges/)
-
-## Core JavaScript Programming
 
 ### Part 0 - JavaScript and Node.js
 

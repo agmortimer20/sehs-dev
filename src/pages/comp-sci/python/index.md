@@ -10,12 +10,6 @@ title: Python Fundamentals
 
 ---
 
-## Code Challenges
-
-[Go to Challenges →](/comp-sci/code-challenges/)
-
-## Core Python Programming
-
 ### Part 1 - Programming Basics
 
 [1.1 Hello World!](activities/1-1-hello-world)
