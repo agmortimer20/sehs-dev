@@ -30,7 +30,7 @@ A function definition contains a set of statements that define what will happen 
 
 ### Example Animation
 
-<video src="/assets/video/javascript/function-animation-basic.mp4" width="640" controls></video>
+<video src="/assets/video/javascript/function-simple-animation.mp4" width="640" controls></video>
 
 ### Skills to Practice
 

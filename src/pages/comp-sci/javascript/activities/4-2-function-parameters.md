@@ -17,7 +17,7 @@ We can give functions dynamic behavior by passing information when calling them.
 
 ### Example Animation
 
-<video src="/assets/video/javascript/function-animation-parameters.mp4" width="640" controls></video>
+<video src="/assets/video/javascript/function-parameters-animation.mp4" width="640" controls></video>
 
 
 ### Skills to Practice
