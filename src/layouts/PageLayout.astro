@@ -1,5 +1,5 @@
 ---
-    import Navbar from '../components/Navbar.astro'
+    import Navbar from '../components/Navbar.svelte'
 
     let { 
         title = "",
@@ -20,10 +20,9 @@
     <link rel="stylesheet" href={Astro.resolve('../styles/global.scss')}>
     <title>{'title' in content ? content.title : title} | Sehs.Dev</title>
     <script src=`/assets/js/prism${dotMin}.js` defer></script>
-    <script src=`https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle${dotMin}.js` crossorigin="anonymous"></script>
 </head>
 <body class="line-numbers match-braces">
-    <Navbar margin={navMargin} />
+    <Navbar margin={navMargin} client:load />
     <div class={'container' in content ? content.container : container}>
         <slot/>
     </div>

@@ -1,12 +1,28 @@
----
-let { margin = "3" } = Astro.props
----
+<script>
+  import { onMount } from "svelte";
 
-<nav class=`navbar navbar-expand-lg navbar-dark bg-dark mb-${margin}`>
+  export let margin = "3";
+
+  onMount(async () => {
+    let collapse = await import ('bootstrap/js/dist/collapse')
+    let dropdown = await import('bootstrap/js/dist/dropdown');
+  });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-{margin}">
   <div class="container-fluid">
     <a href="/" class="navbar-brand font-monospace">
-      <img src="/assets/img/eds-logo-128px.png" width="40px" class="d-inline-block align-text-top">
-      Sehs Dev:<span class="eds-green">~$</span><span class="cursor font-monospace"> _</span>
+      <img
+        src="/assets/img/eds-logo-128px.png"
+        width="40px"
+        class="d-inline-block align-text-top"
+        alt="eds logo"
+      />
+      Sehs Dev:<span class="eds-green">~$</span><span
+        class="cursor font-monospace"
+      >
+        _</span
+      >
     </a>
     <button
       class="navbar-toggler"
@@ -17,7 +33,7 @@ let { margin = "3" } = Astro.props
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
