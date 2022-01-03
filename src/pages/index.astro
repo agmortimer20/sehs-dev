@@ -2,7 +2,7 @@
 import CourseCard from '../components/CourseCard.astro';
 import LogoAnimation from '../components/LogoAnimation.astro';
 import PageLayout from '../layouts/PageLayout.astro';
-import RandomQuote from '../components/RandomQuote.svelte';
+import RandomQuote from '../components/RandomQuote.astro';
 ---
 
 <PageLayout title="Home" navMargin="0">
@@ -12,7 +12,7 @@ import RandomQuote from '../components/RandomQuote.svelte';
 			St. Ed's Computer Science and Electrical Engineering
 		</h1>
 		<LogoAnimation/>
-		<RandomQuote client:load alignment="center"/>
+		<RandomQuote alignment="center"/>
 	</div>
 
 	<div class="container">

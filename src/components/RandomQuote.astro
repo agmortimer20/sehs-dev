@@ -1,0 +1,18 @@
+---
+let { alignment = "left" } = Astro.props;
+---
+<figure class=`text-${alignment}`>
+    <blockquote id="randomQuote" class="blockquote">&nbsp;</blockquote>
+    <figcaption class="blockquote-footer">Mr. Mortimer</figcaption>
+</figure>
+
+<script defer>
+    let quotes = [
+        "I may not be the best, but I'm sure not the cheapest. 💰",
+        "Now with more soy! 🌱",
+        "Mortimers don't quit, we get fired. 🔥"
+    ]
+
+    document.querySelector("#randomQuote")
+        .innerText = quotes[parseInt(Math.random() * quotes.length)]
+</script>
