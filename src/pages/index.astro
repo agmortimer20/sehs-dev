@@ -1,6 +1,6 @@
 ---
 import CourseCard from '../components/CourseCard.astro';
-import LogoAnimation from '../components/LogoAnimation.astro';
+import LogoAnimation from '../components/LogoAnimation.svelte';
 import PageLayout from '../layouts/PageLayout.astro';
 import RandomQuote from '../components/RandomQuote.astro';
 ---
@@ -11,7 +11,7 @@ import RandomQuote from '../components/RandomQuote.astro';
 		<h1 class="text-center display-5 fw-bold">
 			St. Ed's Computer Science and Electrical Engineering
 		</h1>
-		<LogoAnimation/>
+		<LogoAnimation client:load />
 		<RandomQuote alignment="center"/>
 	</div>
 
