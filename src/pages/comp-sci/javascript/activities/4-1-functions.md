@@ -17,13 +17,13 @@ There are two concepts to understand when working with functions: creating funct
 ```js
 // Function definition
 function sampleFunction() {
-  console.log("What is this?");
-  console.log("That's cheese...");
+  console.log("What is this?")
+  console.log("That's cheese...")
 }
 
 // Function invocation
-sampleFunction();
-sampleFunction();
+sampleFunction()
+sampleFunction()
 ```
 
 A function definition contains a set of statements that define what will happen when the function is invoked. This is known as a function body. One important thing to note: **The function body does not execute until the function is invoked.**
@@ -49,86 +49,86 @@ A function definition contains a set of statements that define what will happen 
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Function definitions
 // The code in these functions do not execute until the function is invoked.
 
 function greet() {
-  console.log("Hey buddy!");
+  console.log("Hey buddy!")
 
-  var mood = readline.question("How's it goin', eh? ");
+  var mood = readline.question("How's it goin', eh? ")
 
   if (mood == "good") {
-    console.log("Glad to hear it!");
+    console.log("Glad to hear it!")
   } else if (mood == "bad") {
-    console.log("Sorry to hear that :(");
+    console.log("Sorry to hear that :(")
   } else {
-    console.log("Well then...");
+    console.log("Well then...")
   }
 }
 
 function dontInvokeThisFunction() {
-  console.log("What is your problem???");
+  console.log("What is your problem???")
   console.log(
     "Why would you invoke a function named 'dontInvokeThisFunction'???"
-  );
+  )
 }
 
 function bottlesOfMilkSong() {
-  var bottles = 99;
+  var bottles = 99
 
   while (bottles > 0) {
-    console.log(`${bottles} bottles of milk on the wall,`);
-    console.log(`${bottles} bottles of milk!`);
-    console.log("You take one down, pass it around,");
-    bottles--;
-    console.log(`${bottles} bottles of milk on the wall!\n`);
+    console.log(`${bottles} bottles of milk on the wall,`)
+    console.log(`${bottles} bottles of milk!`)
+    console.log("You take one down, pass it around,")
+    bottles--
+    console.log(`${bottles} bottles of milk on the wall!\n`)
   }
 }
 
 function songThatNeverEnds() {
-  var answer = "";
+  var answer = ""
 
   while (answer != "no") {
     console.log(
       "\nIt's the song that never ends, it goes on and on my friends!"
-    );
-    console.log("Some people started singing it not knowing what it was,");
-    console.log("but they'll continue singing it, that's just because...\n");
+    )
+    console.log("Some people started singing it not knowing what it was,")
+    console.log("but they'll continue singing it, that's just because...\n")
 
-    answer = readline.question("Continue? ");
+    answer = readline.question("Continue? ")
   }
 }
 
 // Main Menu
-var choice = "";
+var choice = ""
 
 // Invoke/Call the greet() function
-greet();
+greet()
 
 while (choice != "5") {
-  console.log("\n-Menu-");
-  console.log("1) Greet again");
-  console.log("2) Invoke the forbidden function...");
-  console.log("3) Sing 99 Bottles of Milk");
-  console.log("4) Sing the never ending song");
-  console.log("5) Exit\n");
+  console.log("\n-Menu-")
+  console.log("1) Greet again")
+  console.log("2) Invoke the forbidden function...")
+  console.log("3) Sing 99 Bottles of Milk")
+  console.log("4) Sing the never ending song")
+  console.log("5) Exit\n")
 
-  choice = readline.question("-> ");
+  choice = readline.question("-> ")
 
   if (choice == "1") {
-    greet();
+    greet()
   } else if (choice == "2") {
-    dontInvokeThisFunction();
+    dontInvokeThisFunction()
   } else if (choice == "3") {
-    bottlesOfMilkSong();
+    bottlesOfMilkSong()
   } else if (choice == "4") {
-    songThatNeverEnds();
+    songThatNeverEnds()
   } else if (choice == "5") {
-    console.log("Goodbye.");
+    console.log("Goodbye.")
   } else {
-    console.log("Invalid option.");
+    console.log("Invalid option.")
   }
 }
 ```

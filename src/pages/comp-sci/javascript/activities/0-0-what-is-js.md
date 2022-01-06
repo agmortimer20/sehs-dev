@@ -35,7 +35,7 @@ Try this out: open up Microsoft Edge, Google Chrome, or Mozilla Firefox. Hit the
 Type the following line into the console and press _enter_:
 
 ```js
-alert("Hello!");
+alert("Hello!")
 ```
 
 ![JS Console Sample](/assets/img/javascript/js-console-sample.gif)

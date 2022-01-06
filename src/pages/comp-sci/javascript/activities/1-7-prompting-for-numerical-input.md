@@ -20,9 +20,9 @@ There are two functions for converting a string into a number:
 ### Function Examples
 
 ```js
-parseInt("32"); // "32" converts to 32
-parseFloat("100.4"); // "100.4" converts to 100.4
-parseFloat("32.5"); // "32.5" converts to 32. The decimal gets truncated.
+parseInt("32") // "32" converts to 32
+parseFloat("100.4") // "100.4" converts to 100.4
+parseFloat("32.5") // "32.5" converts to 32. The decimal gets truncated.
 ```
 
 ### Skills to Practice
@@ -51,29 +51,29 @@ parseFloat("32.5"); // "32.5" converts to 32. The decimal gets truncated.
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Age to months calculator
-console.log("--- Age to Months Calculator ---");
+console.log("--- Age to Months Calculator ---")
 // Steps involved in the statements below:
 // 1) User types age
 // 2) Convert string input to integer
 // 3) Save number to age
-var age = readline.question("Enter your age: ");
-age = parseInt(age);
+var age = readline.question("Enter your age: ")
+age = parseInt(age)
 
 console.log(
   `You are ${age} years old. That's ${age * 12} months old, you old fart!\n`
-);
+)
 
 // Square area calculator
-console.log("--- Square Area Calculator ---");
+console.log("--- Square Area Calculator ---")
 // Shorter, concise way to get input, convert to number, and save to variable
-var length = parseFloat(readline.question("Enter the length of the square: "));
-var unit = readline.question("Enter the unit of measurement (in, ft, m): ");
-var area = length * length;
+var length = parseFloat(readline.question("Enter the length of the square: "))
+var unit = readline.question("Enter the unit of measurement (in, ft, m): ")
+var area = length * length
 
-console.log(`The area of the square is ${area}${unit} squared`);
+console.log(`The area of the square is ${area}${unit} squared`)
 ```
 
 ### Debug
@@ -96,6 +96,6 @@ The area of the square is 650.25ft squared
 Example:
 
 ```js
-var age = readline.question("Enter your age");
-age = parseInt(age);
+var age = readline.question("Enter your age")
+age = parseInt(age)
 ```

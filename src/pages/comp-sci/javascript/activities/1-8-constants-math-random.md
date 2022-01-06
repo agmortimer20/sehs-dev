@@ -39,48 +39,48 @@ With reference to PI, JavaScript provides built-in math constants along with oth
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Constants
-console.log("--- Cash Register Sales Tax Calculator ---");
+console.log("--- Cash Register Sales Tax Calculator ---")
 
-const SALES_TAX = 0.08;
+const SALES_TAX = 0.08
 // Uncomment the line below and try running the program.
 // SALES_TAX = 0.09
-var subtotal = 10;
-var tax = subtotal * SALES_TAX;
+var subtotal = 10
+var tax = subtotal * SALES_TAX
 
-console.log(`Subtotal: $${subtotal}, Total: $${subtotal + tax}\n`);
+console.log(`Subtotal: $${subtotal}, Total: $${subtotal + tax}\n`)
 
-console.log("--- Circumference Calculator ---");
-var radius = parseFloat(readline.question("Enter radius: "));
-var circumference = 2 * Math.PI * radius; // Built-in constant - Math.PI
+console.log("--- Circumference Calculator ---")
+var radius = parseFloat(readline.question("Enter radius: "))
+var circumference = 2 * Math.PI * radius // Built-in constant - Math.PI
 
-console.log(`Radius: ${radius}, Circumference: ${circumference}`);
-console.log(`Truncate circumference: ${circumference.toFixed(2)}\n`);
+console.log(`Radius: ${radius}, Circumference: ${circumference}`)
+console.log(`Truncate circumference: ${circumference.toFixed(2)}\n`)
 
-console.log("--- Math Function Demos ---");
+console.log("--- Math Function Demos ---")
 
-console.log("- Math.pow(base, exponent) - Calculate exponents");
-console.log(`7 cubed = ${Math.pow(7, 3)}\n`);
+console.log("- Math.pow(base, exponent) - Calculate exponents")
+console.log(`7 cubed = ${Math.pow(7, 3)}\n`)
 
-console.log("- Math.sqrt(number) - Calculate square roots");
-console.log(`Square root of 4 = ${Math.sqrt(4)}\n`);
+console.log("- Math.sqrt(number) - Calculate square roots")
+console.log(`Square root of 4 = ${Math.sqrt(4)}\n`)
 
-console.log("- Math.round(number), Math.floor(number), Math.ceil(number)");
-console.log("- Round decimal, always round down, always round up");
-console.log("Number: 3.534");
+console.log("- Math.round(number), Math.floor(number), Math.ceil(number)")
+console.log("- Round decimal, always round down, always round up")
+console.log("Number: 3.534")
 console.log(
   `Round: ${Math.round(3.534)}, Floor: ${Math.floor(3.534)}, Ceil: ${Math.ceil(
     3.534
   )}\n`
-);
+)
 
 console.log(
   "- Math.random() - Generate a random number between 0-1 (exclusive)"
-);
-var randomNumber = Math.floor(Math.random() * 100); // Generate a random number from 0-99
-console.log(`Randomly generated number: ${randomNumber}\n`);
+)
+var randomNumber = Math.floor(Math.random() * 100) // Generate a random number from 0-99
+console.log(`Randomly generated number: ${randomNumber}\n`)
 ```
 
 ### Debug

@@ -40,45 +40,45 @@ Something that can store many items in a collection are called **data structures
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Create an array with values, and use them in a simple program.
-var names = ["Anthony", "Ashton", "Allan", "Alejandro", "Alex"]; // Create an array of names
+var names = ["Anthony", "Ashton", "Allan", "Alejandro", "Alex"] // Create an array of names
 
-console.log(`${names[0]} is a giant dummy. How did he become a teacher?`);
-console.log(`This other guy, ${names[1]}, smells like potato skins.`);
-console.log(`${names[2]} is alright...`);
-console.log(`I have literally no idea who ${names[3]} is...`);
-console.log(`${names[4]} is probably the worst dude out there!\n`);
+console.log(`${names[0]} is a giant dummy. How did he become a teacher?`)
+console.log(`This other guy, ${names[1]}, smells like potato skins.`)
+console.log(`${names[2]} is alright...`)
+console.log(`I have literally no idea who ${names[3]} is...`)
+console.log(`${names[4]} is probably the worst dude out there!\n`)
 
 // Create a blank array and assign it some grades.
-var grades = []; // Create an empty array
+var grades = [] // Create an empty array
 
-grades[0] = 96;
-grades[1] = 85;
-grades[2] = 90;
-grades[3] = 81;
-grades[4] = 89;
+grades[0] = 96
+grades[1] = 85
+grades[2] = 90
+grades[3] = 81
+grades[4] = 89
 
 // Calculate final grade
-var totalPoints = grades[0] + grades[1] + grades[2] + grades[3] + grades[4];
-var finalGrade = totalPoints / 5;
+var totalPoints = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
+var finalGrade = totalPoints / 5
 
-console.log(`Grade 1: ${grades[0]} / 100`);
-console.log(`Grade 2: ${grades[1]} / 100`);
-console.log(`Grade 3: ${grades[2]} / 100`);
-console.log(`Grade 4: ${grades[3]} / 100`);
-console.log(`Grade 5: ${grades[4]} / 100`);
-console.log(`Your final grades is ${finalGrade}% \n`);
+console.log(`Grade 1: ${grades[0]} / 100`)
+console.log(`Grade 2: ${grades[1]} / 100`)
+console.log(`Grade 3: ${grades[2]} / 100`)
+console.log(`Grade 4: ${grades[3]} / 100`)
+console.log(`Grade 5: ${grades[4]} / 100`)
+console.log(`Your final grades is ${finalGrade}% \n`)
 
 // Create arrays with different data types
-var wallet1 = ["Michael", 100];
-var wallet2 = ["Johnny", 100000];
-var wallet3 = ["Adam", -100];
+var wallet1 = ["Michael", 100]
+var wallet2 = ["Johnny", 100000]
+var wallet3 = ["Adam", -100]
 
-console.log(`${wallet1[0]} has $${wallet1[1]}`);
-console.log(`${wallet2[0]} has $${wallet2[1]}`);
-console.log(`${wallet3[0]} has $${wallet3[1]}`);
+console.log(`${wallet1[0]} has $${wallet1[1]}`)
+console.log(`${wallet2[0]} has $${wallet2[1]}`)
+console.log(`${wallet3[0]} has $${wallet3[1]}`)
 ```
 
 ### Debug

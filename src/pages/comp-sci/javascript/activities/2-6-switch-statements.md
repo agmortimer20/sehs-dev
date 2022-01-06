@@ -13,7 +13,7 @@ title: "JavaScript Fundamentals 2.6 Switch Statements"
 If there is an instance where you need to see if a simple expressions matches one of many different values. For example, see how the program below uses if statements to match the value of a variable.
 
 ```js
-var number = 1000;
+var number = 1000
 
 if (number == 0) {
   // statements...
@@ -37,26 +37,26 @@ When you have a redundant set of `if`, `else if` statements checking a simple ex
 **Example**
 
 ```js
-var number = 1000;
+var number = 1000
 
 switch (number) {
   case 0:
-    console.log("Number is 0");
-    break;
+    console.log("Number is 0")
+    break
   case 10:
-    console.log("Number is 10");
-    break;
+    console.log("Number is 10")
+    break
   case 100:
-    console.log("Number is 100");
-    break;
+    console.log("Number is 100")
+    break
   case 1000:
-    console.log("Number is 1000");
-    break;
+    console.log("Number is 1000")
+    break
   case 10000:
-    console.log("Number is 10000");
-    break;
+    console.log("Number is 10000")
+    break
   default:
-    console.log("Unknown...");
+    console.log("Unknown...")
 }
 ```
 
@@ -80,52 +80,52 @@ The `break` keyword is used to end the switch statement. Without it, the switch 
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-console.log("---Chinese Zodiac---");
+console.log("---Chinese Zodiac---")
 
-var birthYear = parseInt(readline.question("Enter your birth year: "));
-var animal;
+var birthYear = parseInt(readline.question("Enter your birth year: "))
+var animal
 
 switch (birthYear % 12) {
   case 0:
-    animal = "monkey";
-    break;
+    animal = "monkey"
+    break
   case 1:
-    animal = "rooster";
-    break;
+    animal = "rooster"
+    break
   case 2:
-    animal = "dog";
-    break;
+    animal = "dog"
+    break
   case 3:
-    animal = "pig";
-    break;
+    animal = "pig"
+    break
   case 4:
-    animal = "rat";
-    break;
+    animal = "rat"
+    break
   case 5:
-    animal = "ox";
-    break;
+    animal = "ox"
+    break
   case 6:
-    animal = "tiger";
-    break;
+    animal = "tiger"
+    break
   case 7:
-    animal = "rabbit";
-    break;
+    animal = "rabbit"
+    break
   case 8:
-    animal = "dragon";
-    break;
+    animal = "dragon"
+    break
   case 9:
-    animal = "snake";
-    break;
+    animal = "snake"
+    break
   case 10:
-    animal = "horse";
-    break;
+    animal = "horse"
+    break
   case 11:
-    animal = "sheep";
+    animal = "sheep"
 }
 
-console.log(`You were born in ${birthYear}, the year of the ${animal}!`);
+console.log(`You were born in ${birthYear}, the year of the ${animal}!`)
 ```
 
 ### Debug

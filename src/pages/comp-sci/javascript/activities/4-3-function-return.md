@@ -24,14 +24,14 @@ In programming, functions have a keyword called `return`. We call statements inv
 
 ```js
 function add(num1, num2) {
-  return num1 + num2;
+  return num1 + num2
 }
 ```
 
 In the example above, the add function _returns_ the sum of the num1 and num2 parameters. Just like any of the other functions we've used, we can assign the return value to a variable.
 
 ```js
-var sum = add(10, 15); // sum = 25
+var sum = add(10, 15) // sum = 25
 ```
 
 ### Skills to Practice
@@ -52,76 +52,76 @@ var sum = add(10, 15); // sum = 25
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Function Definitions
 // These will be used in the main program below.
 
 function squareNumber(number) {
-  return number * number;
+  return number * number
 }
 
 function subtract(number1, number2) {
-  return number1 - number2;
+  return number1 - number2
 }
 
 function monthsToYears(months) {
-  return Math.floor(months / 12);
+  return Math.floor(months / 12)
 }
 
 function yearsToMonths(years) {
-  return years * 12;
+  return years * 12
 }
 
 // Roll a single die
 function rollDie() {
-  return Math.floor(Math.random() * 6 + 1); // 1-6
+  return Math.floor(Math.random() * 6 + 1) // 1-6
 }
 
-console.log("-- Random Utilities Calculator --");
+console.log("-- Random Utilities Calculator --")
 
-var choice = "";
-var number;
-var answer;
+var choice = ""
+var number
+var answer
 
 while (choice != "6") {
-  console.log("1) Square a number");
-  console.log("2) Subtract two numbers");
-  console.log("3) Convert months to years");
-  console.log("4) Convert years to months");
-  console.log("5) Roll dice");
-  console.log("6) Exit");
+  console.log("1) Square a number")
+  console.log("2) Subtract two numbers")
+  console.log("3) Convert months to years")
+  console.log("4) Convert years to months")
+  console.log("5) Roll dice")
+  console.log("6) Exit")
 
-  choice = readline.question("->");
+  choice = readline.question("->")
 
   if (choice == "1") {
-    number = parseFloat(readline.question("Enter a number: "));
-    answer = squareNumber(number);
+    number = parseFloat(readline.question("Enter a number: "))
+    answer = squareNumber(number)
 
-    console.log(`${number} squared is ${answer}\n`);
+    console.log(`${number} squared is ${answer}\n`)
   } else if (choice == "2") {
-    number = parseFloat(readline.question("Enter a number: "));
-    var number2 = parseFloat(readline.question("Enter a number: "));
-    answer = subtract(number, number2);
+    number = parseFloat(readline.question("Enter a number: "))
+    var number2 = parseFloat(readline.question("Enter a number: "))
+    answer = subtract(number, number2)
 
-    console.log(`${number} minus ${number2} equals ${answer}\n`);
+    console.log(`${number} minus ${number2} equals ${answer}\n`)
   } else if (choice == "3") {
-    number = parseFloat(readline.question("Enter a number: "));
-    console.log(`${number} months equals ${monthsToYears(number)} years\n`);
+    number = parseFloat(readline.question("Enter a number: "))
+    console.log(`${number} months equals ${monthsToYears(number)} years\n`)
   } else if (choice == "4") {
-    number = parseFloat(readline.question("Enter a number: "));
-    console.log(`${number} years equals ${yearsToMonths(number)} months\n`);
+    number = parseFloat(readline.question("Enter a number: "))
+    console.log(`${number} years equals ${yearsToMonths(number)} months\n`)
   } else if (choice == "5") {
-    var die1 = rollDie();
-    var die2 = rollDie();
+    var die1 = rollDie()
+    var die2 = rollDie()
 
     console.log(
       `You rolled a ${die1} and a ${die2} for a total of ${die1 + die2}\n`
-    );
+    )
   } else if (choice == "6") {
-    console.log("Goodbye");
+    console.log("Goodbye")
   } else {
-    console.log("Invalid option...");
+    console.log("Invalid option...")
   }
 }
 ```

@@ -15,11 +15,11 @@ Programming languages have a series of constructs that allow a programmer to con
 An if statement will execute a section of code, known as a **code block**, if a boolean expression, known as a **condition** has a _true_ result.
 
 ```js
-var number = 100;
+var number = 100
 
 if (number == 100) {
-  console.log("Code inside a code block.");
-  console.log("More code inside a code block...");
+  console.log("Code inside a code block.")
+  console.log("More code inside a code block...")
 }
 ```
 
@@ -47,35 +47,35 @@ If the condition is _true_, the code block, which is surrounded by the curly bra
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Age Checker Program
-var age = parseInt(readline.question("Enter your age: "));
+var age = parseInt(readline.question("Enter your age: "))
 
 if (age < 0) {
-  console.log("You're still a baby, get back in there!");
+  console.log("You're still a baby, get back in there!")
 }
 
 if (age >= 13) {
-  console.log("You're old enough to join Cobra Kai.\n");
+  console.log("You're old enough to join Cobra Kai.\n")
 }
 
 if (age >= 16) {
-  console.log("You're old enough to get your license!\n");
+  console.log("You're old enough to get your license!\n")
 }
 
 if (age >= 18) {
-  console.log("You're old enough to live on your own.");
-  console.log("So... Get out of your parents' basement!\n");
+  console.log("You're old enough to live on your own.")
+  console.log("So... Get out of your parents' basement!\n")
 }
 
 if (age >= 35) {
-  console.log("You're old enough to run for president.");
-  var name = readline.question("Enter your full name: ");
-  var year = readline.question("What year will you run? ");
-  var nickname = readline.question("What's your nickname (adjective): ");
+  console.log("You're old enough to run for president.")
+  var name = readline.question("Enter your full name: ")
+  var year = readline.question("What year will you run? ")
+  var nickname = readline.question("What's your nickname (adjective): ")
 
-  console.log(`\n${nickname} ${name} for president! Coming ${year}`);
+  console.log(`\n${nickname} ${name} for president! Coming ${year}`)
 }
 ```
 

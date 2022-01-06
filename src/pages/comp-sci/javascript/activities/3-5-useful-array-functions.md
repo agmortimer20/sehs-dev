@@ -19,9 +19,9 @@ JavaScript provides a number of different useful functions for working with arra
 Returns **true** if the element exists in the array. Otherwise, returns **false**.
 
 ```js
-var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"];
-console.log(chips.includes("cheddar"));
-console.log(chips.includes("hawaiian bbq"));
+var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"]
+console.log(chips.includes("cheddar"))
+console.log(chips.includes("hawaiian bbq"))
 ```
 
 ```shell
@@ -34,9 +34,9 @@ false
 Returns the **index** of the element if it exists in an array. Returns **-1** if the element is not found.
 
 ```js
-var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"];
-console.log(chips.indexOf("cheddar"));
-console.log(chips.indexOf("hawaiian bbq"));
+var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"]
+console.log(chips.indexOf("cheddar"))
+console.log(chips.indexOf("hawaiian bbq"))
 ```
 
 ```shell
@@ -49,10 +49,10 @@ console.log(chips.indexOf("hawaiian bbq"));
 Appends, or adds, an element at the end of an array.
 
 ```js
-var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"];
-chips.push("salt & vinegar");
-chips.push("nacho cheese");
-console.log(chips);
+var chips = ["jalapeno", "sour cream", "barbeque", "cheddar", "cool ranch"]
+chips.push("salt & vinegar")
+chips.push("nacho cheese")
+console.log(chips)
 ```
 
 ```shell
@@ -64,10 +64,10 @@ console.log(chips);
 Removes and returns one or more elements from an array. Specify the index to start at and how many elements to slice. Note, we will typically use `.splice()` to remove just one element from an array.
 
 ```js
-var animals = ["mongoose", "camel", "wolf", "sheep"];
-var myAnimal = animals.splice(1, 1); // Starting at index 1, remove 1 element
-console.log(myAnimal);
-console.log(animals);
+var animals = ["mongoose", "camel", "wolf", "sheep"]
+var myAnimal = animals.splice(1, 1) // Starting at index 1, remove 1 element
+console.log(myAnimal)
+console.log(animals)
 ```
 
 ```shell
@@ -93,34 +93,34 @@ console.log(animals);
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-var inventory = [];
-var itemChoice = "";
+var inventory = []
+var itemChoice = ""
 
-inventory.push("potion");
-inventory.push("potion");
-inventory.push("key");
-inventory.push("sword");
+inventory.push("potion")
+inventory.push("potion")
+inventory.push("key")
+inventory.push("sword")
 
 while (itemChoice != "exit") {
-  console.log("Items:");
+  console.log("Items:")
 
   for (var item of inventory) {
-    console.log(`- ${item}`);
+    console.log(`- ${item}`)
   }
 
-  console.log("\nWhat item would you like to use? (type exit to finish)");
-  itemChoice = readline.question("-> ");
+  console.log("\nWhat item would you like to use? (type exit to finish)")
+  itemChoice = readline.question("-> ")
 
   if (itemChoice == "exit") {
-    console.log("Goodbye...");
+    console.log("Goodbye...")
   } else if (!inventory.includes(itemChoice)) {
-    console.log("Item not found...\n");
+    console.log("Item not found...\n")
   } else {
-    console.log(`Using ${itemChoice}\n`);
-    var itemIndex = inventory.indexOf(itemChoice);
-    inventory.splice(itemIndex, 1);
+    console.log(`Using ${itemChoice}\n`)
+    var itemIndex = inventory.indexOf(itemChoice)
+    inventory.splice(itemIndex, 1)
   }
 }
 ```

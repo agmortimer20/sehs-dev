@@ -23,16 +23,16 @@ The following examples **can** be written with a while loop, but notice how the 
 **Example**: Count up from 1 to 10 with a for loop
 
 ```js
-for (var i = 1; i <= 10; i++) {
-  console.log(i);
+for (var i = 1 i <= 10 i++) {
+  console.log(i)
 }
 ```
 
 **Example**: Count down from 10 to 1 with a for loop
 
 ```js
-for (var i = 10; i >= 1; i--) {
-  console.log(i);
+for (var i = 10 i >= 1 i--) {
+  console.log(i)
 }
 ```
 
@@ -56,69 +56,69 @@ for (var i = 10; i >= 1; i--) {
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-console.log("Counting multiples of two.");
-var maxNumber = parseInt(readline.question("Enter max number: "));
+console.log("Counting multiples of two.")
+var maxNumber = parseInt(readline.question("Enter max number: "))
 
-for (var i = 2; i <= maxNumber; i = i + 2) {
-  console.log(i);
+for (var i = 2 i <= maxNumber i = i + 2) {
+  console.log(i)
 }
 
-readline.question("\nPress enter to continue\n");
+readline.question("\nPress enter to continue\n")
 
-console.log("Counting exponents");
-var base = parseInt(readline.question("Choose base number: "));
-var maxPower = parseInt(readline.question("Choose max exponent: "));
+console.log("Counting exponents")
+var base = parseInt(readline.question("Choose base number: "))
+var maxPower = parseInt(readline.question("Choose max exponent: "))
 
-for (var i = 0; i <= maxPower; i++) {
-  console.log(`${base}^${i} = ${Math.pow(base, i)}`);
+for (var i = 0 i <= maxPower i++) {
+  console.log(`${base}^${i} = ${Math.pow(base, i)}`)
 }
 
-readline.question("\nPress enter to continue\n");
+readline.question("\nPress enter to continue\n")
 
-console.log("Math Game");
+console.log("Math Game")
 
-var numberCorrect = 0;
-var numberWrong = 0;
-var numberOfRounds = parseInt(readline.question("How many rounds? "));
+var numberCorrect = 0
+var numberWrong = 0
+var numberOfRounds = parseInt(readline.question("How many rounds? "))
 
-for (var i = 1; i <= numberOfRounds; i++) {
-  console.log(`\nRound ${i}`);
-  console.log(`Correct: ${numberCorrect} | Wrong: ${numberWrong}`);
+for (var i = 1 i <= numberOfRounds i++) {
+  console.log(`\nRound ${i}`)
+  console.log(`Correct: ${numberCorrect} | Wrong: ${numberWrong}`)
 
   // Generate operands (1-100)
-  var operand1 = Math.floor(Math.random() * 100 + 1);
-  var operand2 = Math.floor(Math.random() * 100 + 1);
+  var operand1 = Math.floor(Math.random() * 100 + 1)
+  var operand2 = Math.floor(Math.random() * 100 + 1)
 
   // Generate operator and answer
-  var random = Math.floor(Math.random() * 3);
+  var random = Math.floor(Math.random() * 3)
 
   if (random == 0) {
-    var sign = "+";
-    var correctAnswer = operand1 + operand2;
+    var sign = "+"
+    var correctAnswer = operand1 + operand2
   } else if (random == 1) {
-    var sign = "-";
-    var correctAnswer = operand1 - operand2;
+    var sign = "-"
+    var correctAnswer = operand1 - operand2
   } else if (random == 2) {
-    var sign = "*";
-    var correctAnswer = operand1 * operand2;
+    var sign = "*"
+    var correctAnswer = operand1 * operand2
   }
 
   var playerAnswer = parseInt(
     readline.question(`What is ${operand1} ${sign} ${operand2}? `)
-  );
+  )
 
   if (playerAnswer == correctAnswer) {
-    console.log("Correct!");
-    numberCorrect++;
+    console.log("Correct!")
+    numberCorrect++
   } else {
-    console.log(`Wrong! The correct answer is ${correctAnswer}`);
-    numberWrong++;
+    console.log(`Wrong! The correct answer is ${correctAnswer}`)
+    numberWrong++
   }
 }
 
-console.log(`\nFinal Score: Correct: ${numberCorrect}, Wrong: ${numberWrong}`);
+console.log(`\nFinal Score: Correct: ${numberCorrect}, Wrong: ${numberWrong}`)
 ```
 
 ### Debug

@@ -40,43 +40,43 @@ Here's the issue, Node.js does not provide the package for `readline.question()`
 
 ```javascript
 // Node.js style import. This does NOT work in browser based JavaScript.
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Buddy the Elf Greeting Program
 // The program will pause and wait for the user to type a response.
-var name = readline.question("Hey! What's your name? My name's Buddy! ");
-console.log(`${name}, that's fun to say! ${name}, ${name}...`);
+var name = readline.question("Hey! What's your name? My name's Buddy! ")
+console.log(`${name}, that's fun to say! ${name}, ${name}...`)
 
-var answer = readline.question("Does someone need a hug? ");
-console.log(`${answer}!? I just wanted a hug!`);
+var answer = readline.question("Does someone need a hug? ")
+console.log(`${answer}!? I just wanted a hug!`)
 
 var favoriteColor = readline.question(
   "Buddy the Elf, what's your favorite color? "
-);
+)
 console.log(
   `That's a nice ${favoriteColor} outfit, very ${favoriteColor}-y.\n`
-);
+)
 
 // Secret Agent ID Program
-console.log("----- SECRET AGENT CONSOLE -----");
-console.log("IDENTITY NOT FOUND. CREATING NEW IDENTITY...");
+console.log("----- SECRET AGENT CONSOLE -----")
+console.log("IDENTITY NOT FOUND. CREATING NEW IDENTITY...")
 
-var firstName = readline.question("Enter your first name: ");
-var codeName = readline.question("Enter your code name: ");
-var agentNumber = readline.question("Enter your agent ID number: ");
+var firstName = readline.question("Enter your first name: ")
+var codeName = readline.question("Enter your code name: ")
+var agentNumber = readline.question("Enter your agent ID number: ")
 
 // I don't type the question inside of readline.question(), because I want to make a list of choices for this prompt
-console.log("Choose your gadget:");
-console.log("- ASMR Radio");
-console.log("- Flashbang Energy Drink");
-console.log("- Metamucil");
-var gadget = readline.question("-> "); // Cool looking arrow prompt
+console.log("Choose your gadget:")
+console.log("- ASMR Radio")
+console.log("- Flashbang Energy Drink")
+console.log("- Metamucil")
+var gadget = readline.question("-> ") // Cool looking arrow prompt
 
-console.log("\n-- Constructing your agent identity --");
-console.log(`AGENT NAME: ${firstName} - CODE NAME: ${codeName}`);
-console.log(`AGENT ID NUMBER: ${agentNumber}`);
-console.log(`GADGET: ${gadget}`);
-console.log("-- IDENTITY CONFIRMED EXITING... --");
+console.log("\n-- Constructing your agent identity --")
+console.log(`AGENT NAME: ${firstName} - CODE NAME: ${codeName}`)
+console.log(`AGENT ID NUMBER: ${agentNumber}`)
+console.log(`GADGET: ${gadget}`)
+console.log("-- IDENTITY CONFIRMED EXITING... --")
 ```
 
 ### Debug

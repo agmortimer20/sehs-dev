@@ -24,7 +24,7 @@ The two symbols for division may throw you off, because we don't have a math sig
 
 We will also learn how to write comments in JavaScript. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. We will start with one type of comment, the single line comment: `// comment`.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f5MQpM4IUzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5MQpM4IUzk" frameborder="0" allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture" allowfullscreen></iframe>
 
 ### Skills to Practice
 
@@ -51,48 +51,48 @@ We will also learn how to write comments in JavaScript. Comments serve two purpo
 // Addition
 console.log(
   "I have two apples. I find another apple. How many apples do I have?"
-);
-console.log(2 + 1);
-console.log();
+)
+console.log(2 + 1)
+console.log()
 
-console.log("Bank balance: $1000. Depositing $500.96. Your new balance is:");
-console.log(1000 + 500.96);
-console.log();
+console.log("Bank balance: $1000. Depositing $500.96. Your new balance is:")
+console.log(1000 + 500.96)
+console.log()
 
 // Subtraction
 console.log(
   "I'm hungry and I want to eat an apple. How many apples will I have left?"
-);
-console.log(3 - 1);
-console.log();
+)
+console.log(3 - 1)
+console.log()
 
 // Multiplication
-console.log("I'm 30 years old. In months, that's: "); // Replace 30 with your age
-console.log(30 * 12); // Replace 30 with your age
-console.log();
+console.log("I'm 30 years old. In months, that's: ") // Replace 30 with your age
+console.log(30 * 12) // Replace 30 with your age
+console.log()
 
 // Division - Quotient and remainder
 
 // Quotient
-console.log("We have eight slices of pizza between the two of us.");
-console.log("We each get this many slices: ");
-console.log(8 / 2);
-console.log();
+console.log("We have eight slices of pizza between the two of us.")
+console.log("We each get this many slices: ")
+console.log(8 / 2)
+console.log()
 
-console.log("I have to split this dollar between the six of us. We each get: ");
-console.log(100 / 6); // Will this divide evenly?
-console.log();
+console.log("I have to split this dollar between the six of us. We each get: ")
+console.log(100 / 6) // Will this divide evenly?
+console.log()
 
 // Remainder using the modulus, or mod, operator
-console.log("After splitting up the dollar, how many cents are left over?");
-console.log(100 % 6);
-console.log();
+console.log("After splitting up the dollar, how many cents are left over?")
+console.log(100 % 6)
+console.log()
 
 // Order of operations
-console.log("4 * 10 + 12 equals:");
-console.log(4 * 10 + 12);
-console.log("4 * (10 + 12) equals:");
-console.log(4 * (10 + 12));
+console.log("4 * 10 + 12 equals:")
+console.log(4 * 10 + 12)
+console.log("4 * (10 + 12) equals:")
+console.log(4 * (10 + 12))
 ```
 
 ### Debug

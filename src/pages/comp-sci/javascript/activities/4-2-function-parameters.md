@@ -38,41 +38,41 @@ We can give functions dynamic behavior by passing information when calling them.
 
 ```javascript
 function counter(number) {
-  var currentNumber = 1;
+  var currentNumber = 1
 
-  console.log(`Counting from ${currentNumber} to ${number}.`);
+  console.log(`Counting from ${currentNumber} to ${number}.`)
 
   while (currentNumber <= number) {
-    console.log(currentNumber);
-    currentNumber++;
+    console.log(currentNumber)
+    currentNumber++
   }
 }
 
 function specialGreeting(name) {
-  console.log(`Hey there, ${name}!`);
+  console.log(`Hey there, ${name}!`)
 }
 
 function specialScolding(name) {
-  console.log(`Shame on you, ${name}!`);
+  console.log(`Shame on you, ${name}!`)
 }
 
 function bottlesSong(beverage, numberOfBottles) {
   while (numberOfBottles > 0) {
-    console.log(`${numberOfBottles} bottles of ${beverage} on the wall,`);
-    console.log(`${numberOfBottles} bottles of ${beverage}!`);
-    console.log("You take one down, pass it around.");
+    console.log(`${numberOfBottles} bottles of ${beverage} on the wall,`)
+    console.log(`${numberOfBottles} bottles of ${beverage}!`)
+    console.log("You take one down, pass it around.")
 
-    numberOfBottles--;
+    numberOfBottles--
 
-    console.log(`${numberOfBottles} bottles of ${beverage} on the wall!`);
+    console.log(`${numberOfBottles} bottles of ${beverage} on the wall!`)
   }
 }
 
 // Test out each function by invoking them.
-counter(10); // Replace the 10 argument with a different number
-specialGreeting(); // Pass your name as an argument
-specialScolding(); // Pass your name as an argument
-bottlesSong("Pepsi Max", 3); // Replace the arguments with your own values
+counter(10) // Replace the 10 argument with a different number
+specialGreeting() // Pass your name as an argument
+specialScolding() // Pass your name as an argument
+bottlesSong("Pepsi Max", 3) // Replace the arguments with your own values
 ```
 
 ### Debug

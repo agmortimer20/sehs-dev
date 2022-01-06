@@ -20,7 +20,7 @@ Think of the _and_ `&&` operator as the stric operator between the two, and the 
 Here's an example of when you may want to use a compound expression: "Check if a number is between 0 _and_ 100.
 
 ```js
-number >= 0 && number <= 100;
+number >= 0 && number <= 100
 ```
 
 The expression read like this: "number is greater than or equal to 0 and number is less than or equal to 100.
@@ -59,75 +59,75 @@ The expression read like this: "number is greater than or equal to 0 and number 
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // One Round Battle Demo
-var playerHealth = 10;
-var enemyHealth = 10;
-var escaped = false; // If you decide to run, this will be set to true
+var playerHealth = 10
+var enemyHealth = 10
+var escaped = false // If you decide to run, this will be set to true
 
-console.log("--Menu--");
-console.log("1) attack");
-console.log("2) run");
+console.log("--Menu--")
+console.log("1) attack")
+console.log("2) run")
 
-var choice = readline.question("-> "); // Arrow next to prompt, nothing special
+var choice = readline.question("-> ") // Arrow next to prompt, nothing special
 
 // Player can select number or word in menu
 if (choice == "1" || choice == "attack") {
   // Random attack damage from 0 - 9
-  var playerAttack = Math.floor(Math.random() * 10);
-  var enemyAttack = Math.floor(Math.random() * 10);
+  var playerAttack = Math.floor(Math.random() * 10)
+  var enemyAttack = Math.floor(Math.random() * 10)
 
-  enemyHealth = enemyHealth - playerAttack;
-  playerHealth = playerHealth - enemyAttack;
+  enemyHealth = enemyHealth - playerAttack
+  playerHealth = playerHealth - enemyAttack
 
-  console.log(`You did ${playerAttack} damage!`);
-  console.log(`Enemy has ${enemyHealth} health left.\n`);
-  console.log(`Enemy did ${enemyAttack} damage!`);
-  console.log(`You have ${playerHealth} health left.\n`);
+  console.log(`You did ${playerAttack} damage!`)
+  console.log(`Enemy has ${enemyHealth} health left.\n`)
+  console.log(`Enemy did ${enemyAttack} damage!`)
+  console.log(`You have ${playerHealth} health left.\n`)
 } else if (choice == "2" || choice == "run") {
-  console.log(`You escape like a big baby...`);
-  escaped = true;
+  console.log(`You escape like a big baby...`)
+  escaped = true
 } else {
-  console.log(`Invalid option. Exiting battle...`);
+  console.log(`Invalid option. Exiting battle...`)
 }
 
 // escaped is the same as escaped == true
 if (escaped) {
-  console.log("Bye bye! Back home to Mommy!");
+  console.log("Bye bye! Back home to Mommy!")
 } else if (playerHealth > enemyHealth) {
-  console.log("You are beating the enemy!");
+  console.log("You are beating the enemy!")
 } else if (enemyHealth > playerHealth) {
-  console.log("Be careful, the enemy is beating you!");
+  console.log("Be careful, the enemy is beating you!")
 } else {
   // Fought the enemy, but health is the same value
-  console.log("Battle is tied!");
+  console.log("Battle is tied!")
 }
 
-console.log("\n\n");
+console.log("\n\n")
 
 // Lottery Lite
 // This game is difficult to win. To test out the conditions, consider temporarily lowering the range.
-var lotteryNumber = Math.floor(Math.random() * 100); // 0 - 99
+var lotteryNumber = Math.floor(Math.random() * 100) // 0 - 99
 
 // Extract digits using division and modulus
-var lotteryDigit1 = Math.floor(lotteryNumber / 10); // Get tens place
-var lotteryDigit2 = lotteryNumber % 10; // Get ones place
+var lotteryDigit1 = Math.floor(lotteryNumber / 10) // Get tens place
+var lotteryDigit2 = lotteryNumber % 10 // Get ones place
 
-var entry = parseInt(readline.question("Enter your lottery number (0 - 99): "));
-var entryDigit1 = Math.floor(entry / 10);
-var entryDigit2 = entry % 10;
+var entry = parseInt(readline.question("Enter your lottery number (0 - 99): "))
+var entryDigit1 = Math.floor(entry / 10)
+var entryDigit2 = entry % 10
 
-console.log(`And the lottery number is....\n${lotteryNumber}!`);
+console.log(`And the lottery number is....\n${lotteryNumber}!`)
 
 // Exact match -> $10,000
 // Digits match -> $3,000
 if (entry == lotteryNumber) {
-  console.log("Exact match! You win the grand prize of $10,000!");
+  console.log("Exact match! You win the grand prize of $10,000!")
 } else if (lotteryDigit1 == entryDigit2 && lotteryDigit2 == entryDigit1) {
-  console.log("Your digits match! You win $3,000!");
+  console.log("Your digits match! You win $3,000!")
 } else {
-  console.log("No match. Better luck next time!");
+  console.log("No match. Better luck next time!")
 }
 ```
 

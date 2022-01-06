@@ -30,44 +30,44 @@ _Variables_ allow us to save data during our program execution. For example, in 
 
 ```javascript
 // String variables
-var name = "Anthony"; // Replace the name with your name
-var food = "Steak"; // Replace the food with your favorite food
-var item = "peppers";
+var name = "Anthony" // Replace the name with your name
+var food = "Steak" // Replace the food with your favorite food
+var item = "peppers"
 
-console.log(`Hello, my name is ${name}`);
-console.log(`${name} likes the stinkiest of ${food}.`);
+console.log(`Hello, my name is ${name}`)
+console.log(`${name} likes the stinkiest of ${food}.`)
 console.log(
   `${name} likes ${food} so much, he/she eats it out of the garbage!`
-);
-console.log();
+)
+console.log()
 
-console.log(`Peter Piper picked a peck of pickled ${item}`);
-console.log(`A peck of pickled ${item} Peter Piper picked`);
-console.log();
+console.log(`Peter Piper picked a peck of pickled ${item}`)
+console.log(`A peck of pickled ${item} Peter Piper picked`)
+console.log()
 
 // Numbers
-var age = 30; // Replace the number with your age
+var age = 30 // Replace the number with your age
 
-console.log(`You will reach age 100 in ${100 - age} years!`);
-console.log();
+console.log(`You will reach age 100 in ${100 - age} years!`)
+console.log()
 
-var balance = 35.25;
-var withdrawAmount = 0; // Enter a number
-var newBalance = balance - withdrawAmount;
+var balance = 35.25
+var withdrawAmount = 0 // Enter a number
+var newBalance = balance - withdrawAmount
 
-console.log(`You have a balance of ${balance} in your bank account.`);
+console.log(`You have a balance of ${balance} in your bank account.`)
 // Literal dollar sign in front of template expression
 console.log(
   `If you withdraw $${withdrawAmount}, you will have $${newBalance}.`
-);
-console.log();
+)
+console.log()
 
-var health = 100;
-var damage = 55.95;
+var health = 100
+var damage = 55.95
 
 console.log(
   `You've took ${damage} damage. You have ${health - damage} health left.`
-);
+)
 ```
 
 ### Debug

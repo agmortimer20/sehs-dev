@@ -25,7 +25,7 @@ These examples all use instances of decision making. Think of it like a computer
 Just as math has math operators (`+ - * /`), boolean logic has logic operators: equal to `==`, not equal to `!=`, greater than (`>`), less than (`<`), greater than or equal to (`>=`), less than or equal to (`<=`), and not (`!`). Logic expressions can be constructed using different data types combined with these operators. The result will be either _true_ or _false_. Here's an example:
 
 ```js
-1000 == 1000;
+1000 == 1000
 ```
 
 Is 1000 equal to 1000? It is, so the result is the value _true_. You can see a number of different examples in the tables below. These are known as truth tables.
@@ -86,24 +86,24 @@ Is 1000 equal to 1000? It is, so the result is the value _true_. You can see a n
 ### Code
 
 ```javascript
-var name = "Mr. Mortimer";
-var age = 30;
-var bankAccount = 150;
-var isATeacher = true;
-var isAMillionaire = false;
+var name = "Mr. Mortimer"
+var age = 30
+var bankAccount = 150
+var isATeacher = true
+var isAMillionaire = false
 
-console.log(`Is my name Mr. Mortimer? ${name == "Mr. Mortimer"}`);
-console.log(`Is my name Mr. Mertens? ${name == "Mr. Mertens"}`);
-console.log(`My name is not Mr. Merriman: ${name != "Mr. Merriman"}`);
+console.log(`Is my name Mr. Mortimer? ${name == "Mr. Mortimer"}`)
+console.log(`Is my name Mr. Mertens? ${name == "Mr. Mertens"}`)
+console.log(`My name is not Mr. Merriman: ${name != "Mr. Merriman"}`)
 
-console.log(`Am I old enough to drive? ${age >= 16}`);
+console.log(`Am I old enough to drive? ${age >= 16}`)
 console.log(
   `Do I have enough to buy a Dodge Challenger? ${bankAccount > 31000}`
-);
+)
 
-console.log(`${name} is a teacher: ${isATeacher == true}`);
-console.log(`${name} is a millionaire: ${isAMillionaire}`);
-console.log(`So, ${name} isn't a millionaire? ${!isAMillionaire}`);
+console.log(`${name} is a teacher: ${isATeacher == true}`)
+console.log(`${name} is a millionaire: ${isAMillionaire}`)
+console.log(`So, ${name} isn't a millionaire? ${!isAMillionaire}`)
 ```
 
 ### Debug

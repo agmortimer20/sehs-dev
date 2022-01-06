@@ -28,22 +28,22 @@ All sorts of simple, but fun programs can be created with a few simple loops and
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-var secretNumber = Math.floor(Math.random() * 10 + 1);
-var tries = 0; // Track number of tries
-var guess; // Declared variables without a value are undefined
+var secretNumber = Math.floor(Math.random() * 10 + 1)
+var tries = 0 // Track number of tries
+var guess // Declared variables without a value are undefined
 
 while (guess != secretNumber) {
-  guess = parseInt(readline.question("Guess the number (1-10): "));
-  tries++;
+  guess = parseInt(readline.question("Guess the number (1-10): "))
+  tries++
 
   if (guess == secretNumber) {
-    console.log(`Correct! It took you ${tries} tries!`);
+    console.log(`Correct! It took you ${tries} tries!`)
   } else if (guess > secretNumber) {
-    console.log("Wrong! Too high.");
+    console.log("Wrong! Too high.")
   } else {
-    console.log("Wrong! Too low.");
+    console.log("Wrong! Too low.")
   }
 }
 ```

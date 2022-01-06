@@ -19,12 +19,12 @@ There are many different ways to repeat code. For JavaScript developers, the fir
 ### Example
 
 ```js
-var number = 10;
+var number = 10
 
 // Keep executing loop while number is greater than 0
 while (number > 0) {
-  console.log(`Number is ${number}`);
-  number--; // Subtract 1 from number
+  console.log(`Number is ${number}`)
+  number-- // Subtract 1 from number
 }
 ```
 
@@ -39,11 +39,11 @@ The first major mistake when writing loops is creating a loop then never termina
 **Example**
 
 ```js
-var number = 10;
+var number = 10
 
 // Number variable is never reduced, therefore it is always greater than 0
 while (number > 0) {
-  console.log(`Number is ${number}`);
+  console.log(`Number is ${number}`)
   // number--
 }
 ```
@@ -64,55 +64,55 @@ while (number > 0) {
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // 99 Bottles Song
-console.log("Time to sing a song...\n");
+console.log("Time to sing a song...\n")
 
-var soda = readline.question("Enter your favorite soda: ");
-var numBottles = 99;
+var soda = readline.question("Enter your favorite soda: ")
+var numBottles = 99
 
 while (numBottles > 0) {
-  console.log(`${numBottles} bottles of ${soda} on the wall,`);
-  console.log(`${numBottles} bottles of ${soda}!`);
-  console.log("You take one down, pass it around,");
-  numBottles--; // Subtract one from bottles variables
-  console.log(`${numBottles} bottles of ${soda} on the wall!\n`);
+  console.log(`${numBottles} bottles of ${soda} on the wall,`)
+  console.log(`${numBottles} bottles of ${soda}!`)
+  console.log("You take one down, pass it around,")
+  numBottles-- // Subtract one from bottles variables
+  console.log(`${numBottles} bottles of ${soda} on the wall!\n`)
 
   // readline.question() // Uncomment to pause after every iteration.
 }
 
-console.log("\n");
+console.log("\n")
 
 // Fast Food Menu
-var orderingFood = true;
+var orderingFood = true
 
-console.log("-- Crangis McBasketball Order To Go --");
+console.log("-- Crangis McBasketball Order To Go --")
 
 // Same as orderingFood == true
 while (orderingFood) {
-  console.log("-Entrees-");
-  console.log("1) Crangis McNuggets");
-  console.log("2) JaCrispy Chicken sandwich");
-  console.log("3) Burger with McBasketball sauce");
-  console.log("4) Exit/Complete Order");
+  console.log("-Entrees-")
+  console.log("1) Crangis McNuggets")
+  console.log("2) JaCrispy Chicken sandwich")
+  console.log("3) Burger with McBasketball sauce")
+  console.log("4) Exit/Complete Order")
 
-  var choice = readline.question("Enter an option: ");
+  var choice = readline.question("Enter an option: ")
 
   if (choice == "1") {
-    console.log("Placing order for one Crangis McNugget\n");
+    console.log("Placing order for one Crangis McNugget\n")
   } else if (choice == "2") {
-    console.log("Placing order for one JaCrispy Chicken sandwich\n");
+    console.log("Placing order for one JaCrispy Chicken sandwich\n")
   } else if (choice == "3") {
-    console.log("Placing order for one Burger with McBasketball sauce\n");
+    console.log("Placing order for one Burger with McBasketball sauce\n")
   } else if (choice == "4") {
-    var time = Math.floor(Math.random() * 50 + 10); // 10 - 59
+    var time = Math.floor(Math.random() * 50 + 10) // 10 - 59
     console.log(
       `Your order has been placed! It will be ready in ${time} minutes.`
-    );
-    orderingFood = false;
+    )
+    orderingFood = false
   } else {
-    console.log("Invalid option. Please try again...\n");
+    console.log("Invalid option. Please try again...\n")
   }
 }
 ```

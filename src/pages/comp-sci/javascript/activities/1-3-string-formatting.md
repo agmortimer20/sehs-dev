@@ -15,7 +15,7 @@ In the previous activity, the math expressions were output seperately from the s
 String concatenation involves using the plus sign (`+`) to _combine_ data. For example, I can combing `"My age in months is "` with the number `30 * 12` by using the plus sign.
 
 ```js
-"My age in months is " + 30 * 12;
+"My age in months is " + 30 * 12
 ```
 
 This does **not** perform addition. The plus sign combines the two pieces of data.
@@ -23,7 +23,7 @@ This does **not** perform addition. The plus sign combines the two pieces of dat
 The newer way to format strings is to use a feature called _string templates_. With string templates, you use backticks ( \` \` ) instead of quotes to denote a string. You then use the `${}` symbol to insert expressions into the string.
 
 ```js
-`My age in months is ${30 * 12}.`;
+`My age in months is ${30 * 12}.`
 ```
 
 ### Skills to Practice
@@ -43,29 +43,29 @@ The newer way to format strings is to use a feature called _string templates_. W
 
 ```javascript
 // String contatenation - Use the *+* sign to append math expressions to strings
-console.log("10 squared is " + 10 * 10); // Multiply 10 * ten, then append it to the string.
-console.log();
+console.log("10 squared is " + 10 * 10) // Multiply 10 * ten, then append it to the string.
+console.log()
 
 // Performing addition and string contatenation together can cause problems.
 // console.log("I'm 5 foot 10 inches. In inches, that's " + 5 * 12 + 10 + " inches.")
 
 // You can use parentheses to ensure the addition is not mixed up with concatenation.
-console.log("I'm 5 foot 10 inches. That's " + (5 * 12 + 10) + " inches.");
-console.log();
+console.log("I'm 5 foot 10 inches. That's " + (5 * 12 + 10) + " inches.")
+console.log()
 
 // String templates - Use backticks ` with ${ } instead of quotes.
 console.log(
   `If I take out a $1000 loan, and pay $25 each month, I will pay my loan off in ${
     1000 / 25
   } months.`
-);
-console.log();
+)
+console.log()
 
-console.log("A woodchuck can chuck 32 wood panels every minute.");
+console.log("A woodchuck can chuck 32 wood panels every minute.")
 console.log(
   `Therefore, a woodchuck can chuck ${32 * 60} wood panels every hour.`
-);
-console.log();
+)
+console.log()
 ```
 
 ### Debug

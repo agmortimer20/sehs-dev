@@ -34,15 +34,15 @@ Rock, paper, scissors is a fun game to play between friends. Here is a basic run
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-var wins = 0;
-var losses = 0;
-var round = 1;
-var playing = true;
+var wins = 0
+var losses = 0
+var round = 1
+var playing = true
 
-console.log("---ROCK, PAPER, SCISSORS---");
-console.log(" --2020 Terminal Edition--");
+console.log("---ROCK, PAPER, SCISSORS---")
+console.log(" --2020 Terminal Edition--")
 
 /* Steps to making the game
 
@@ -65,67 +65,67 @@ console.log(" --2020 Terminal Edition--");
 */
 
 while (playing) {
-  console.log(`ROUND ${round}!`);
-  console.log(`W: ${wins} - L: ${losses}`);
+  console.log(`ROUND ${round}!`)
+  console.log(`W: ${wins} - L: ${losses}`)
 
-  console.log("Rock, Paper, Scissors?");
+  console.log("Rock, Paper, Scissors?")
 
-  var playerHand = readline.question("-> ").toLowerCase();
+  var playerHand = readline.question("-> ").toLowerCase()
 
-  var randomNumber = Math.floor(Math.random() * 3); // 0-2
+  var randomNumber = Math.floor(Math.random() * 3) // 0-2
 
   if (randomNumber == 0) {
-    var computerHand = "rock";
+    var computerHand = "rock"
   } else if (randomNumber == 1) {
-    var computerHand = "paper";
+    var computerHand = "paper"
   } else if (randomNumber == 2) {
-    var computerHand = "scissors";
+    var computerHand = "scissors"
   }
 
-  console.log(`Computer chooses ${computerHand}!\n`);
+  console.log(`Computer chooses ${computerHand}!\n`)
 
   if (playerHand == computerHand) {
-    console.log("Tie!");
+    console.log("Tie!")
   } else if (playerHand == "rock") {
     if (computerHand == "paper") {
-      console.log("You lose! Paper covers rock!\n");
-      losses++;
+      console.log("You lose! Paper covers rock!\n")
+      losses++
     } else {
-      console.log("You win! Rock crushes scissors!\n");
-      wins++;
+      console.log("You win! Rock crushes scissors!\n")
+      wins++
     }
   } else if (playerHand == "paper") {
     if (computerHand == "scissors") {
-      console.log("You lose! Scissors cuts paper!\n");
-      losses++;
+      console.log("You lose! Scissors cuts paper!\n")
+      losses++
     } else {
-      console.log("You win! Paper covers rock!\n");
-      wins++;
+      console.log("You win! Paper covers rock!\n")
+      wins++
     }
   } else if (playerHand == "scissors") {
     if (computerHand == "rock") {
-      console.log("You lose! Rock crushes scissors!\n");
-      losses++;
+      console.log("You lose! Rock crushes scissors!\n")
+      losses++
     } else {
-      console.log("You win! Scissors cuts paper!\n");
-      wins++;
+      console.log("You win! Scissors cuts paper!\n")
+      wins++
     }
   } else {
-    console.log("You typed something wrong, dummy...\n");
+    console.log("You typed something wrong, dummy...\n")
   }
 
   // If player says no, set playing to false.
   // This terminates the while loop.
-  console.log("\nPlay again?");
-  var choice = readline.question("-> ");
+  console.log("\nPlay again?")
+  var choice = readline.question("-> ")
 
   if (choice == "no") {
-    playing = false;
+    playing = false
   } else {
-    round++;
+    round++
   }
 
-  console.log();
+  console.log()
 }
 ```
 

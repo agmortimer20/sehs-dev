@@ -20,14 +20,14 @@ We can _branch_ if statements with to other kinds of statements, `else if` and `
 _Example:_
 
 ```js
-var number = 100;
+var number = 100
 
 if (number > 100) {
-  console.log("number is higher than 100");
+  console.log("number is higher than 100")
 } else if (number == 100) {
-  console.log("number is 100");
+  console.log("number is 100")
 } else {
-  console.log("number is less than 100");
+  console.log("number is less than 100")
 }
 ```
 
@@ -48,53 +48,53 @@ if (number > 100) {
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Legal Driving Age Checker
 // Try and see how this application is different from the last one.
-var age = readline.question("Enter your age: ");
-age = parseInt(age);
+var age = readline.question("Enter your age: ")
+age = parseInt(age)
 
 if (age >= 16) {
-  console.log("You are old enough to drive!");
+  console.log("You are old enough to drive!")
 } else if (age == 15) {
   console.log(
     "You can't drive on your own yet, but you are eligible for a learners permit."
-  );
+  )
 } else {
-  console.log("I'm sorry, but you are not old enough to drive");
+  console.log("I'm sorry, but you are not old enough to drive")
 }
 
 // Simple ATM Demo
-console.log("\n--- ATM Demo ---\n");
-var balance = parseFloat(readline.question("Set your initial balance: $"));
+console.log("\n--- ATM Demo ---\n")
+var balance = parseFloat(readline.question("Set your initial balance: $"))
 
-console.log("Crangis McBasketball ATM");
-console.log("------------------------");
-console.log("Select an option: ");
-console.log("1) View Balance");
-console.log("2) Deposit");
-console.log("3) Withdraw");
+console.log("Crangis McBasketball ATM")
+console.log("------------------------")
+console.log("Select an option: ")
+console.log("1) View Balance")
+console.log("2) Deposit")
+console.log("3) Withdraw")
 
 // We're not doing math with the number, so it's okay to leave it as a string.
-var option = readline.question("Enter your option (1,2,3): ");
+var option = readline.question("Enter your option (1,2,3): ")
 
 if (option == "1") {
-  console.log(`Your balance is $${balance}.`);
+  console.log(`Your balance is $${balance}.`)
 } else if (option == "2") {
-  var deposit = readline.question("How much would you like to deposit? $");
-  deposit = parseFloat(deposit);
-  balance = balance + deposit;
-  console.log(`Thank you for your deposit of $${deposit}.`);
-  console.log(`Your balance is now $${balance}.`);
+  var deposit = readline.question("How much would you like to deposit? $")
+  deposit = parseFloat(deposit)
+  balance = balance + deposit
+  console.log(`Thank you for your deposit of $${deposit}.`)
+  console.log(`Your balance is now $${balance}.`)
 } else if (option == "3") {
-  var withdraw = readline.question("How much would you like to withdraw? $");
-  withdraw = parseFloat(withdraw);
-  balance = balance - withdraw;
-  console.log(`Thank you for your withdraw of $${withdraw}.`);
-  console.log(`Your balance is now $${balance}.`);
+  var withdraw = readline.question("How much would you like to withdraw? $")
+  withdraw = parseFloat(withdraw)
+  balance = balance - withdraw
+  console.log(`Thank you for your withdraw of $${withdraw}.`)
+  console.log(`Your balance is now $${balance}.`)
 } else {
-  console.log("Invalid option. Exiting...");
+  console.log("Invalid option. Exiting...")
 }
 ```
 

@@ -21,11 +21,11 @@ for (var variable of array) {
 **Example**
 
 ```js
-var fruits = ["apples", "bananas", "cherries", "dates"];
+var fruits = ["apples", "bananas", "cherries", "dates"]
 
 // for each fruit in the fruits array...
 for (var fruit of fruits) {
-  console.log(fruit);
+  console.log(fruit)
 }
 ```
 
@@ -65,66 +65,66 @@ The for loop operates as such:
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
 // Sodas App Version 2 - Uses a for of loop to iterate through array
-console.log("--- Sodas App v2 ---");
+console.log("--- Sodas App v2 ---")
 
-var sodas = [];
-var addingSodas = true;
-var i = 0;
+var sodas = []
+var addingSodas = true
+var i = 0
 
 while (addingSodas) {
-  var soda = readline.question("Add a soda to your list: ");
-  sodas[i] = soda;
-  i++;
+  var soda = readline.question("Add a soda to your list: ")
+  sodas[i] = soda
+  i++
 
-  var choice = readline.question("Add another soda? (yes/no) ");
+  var choice = readline.question("Add another soda? (yes/no) ")
 
   if (choice == "no") {
-    addingSodas = false;
+    addingSodas = false
   }
 }
 
-console.log("\nHere are your sodas:");
+console.log("\nHere are your sodas:")
 
 for (var soda of sodas) {
-  console.log(`- ${soda}`);
+  console.log(`- ${soda}`)
 }
 
 // End sodas app
-console.log("\n\n");
+console.log("\n\n")
 
 // Shopping cart app
-console.log("--- Shopping Cart ---");
+console.log("--- Shopping Cart ---")
 
-var shoppingCart = [];
-var addingItems = true;
-var i = 0;
+var shoppingCart = []
+var addingItems = true
+var i = 0
 
 while (addingItems) {
-  console.log("-Menu-");
-  console.log("1) Add item to shopping cart");
-  console.log("2) Show shopping cart");
-  console.log("3) Exit");
+  console.log("-Menu-")
+  console.log("1) Add item to shopping cart")
+  console.log("2) Show shopping cart")
+  console.log("3) Exit")
 
-  var choice = readline.question("-> ");
+  var choice = readline.question("-> ")
 
   if (choice == "1") {
-    shoppingCart[i] = readline.question("Add an item to buy: ");
-    i++; // Go to the next index
+    shoppingCart[i] = readline.question("Add an item to buy: ")
+    i++ // Go to the next index
   } else if (choice == "2") {
-    console.log("\nShopping cart:");
+    console.log("\nShopping cart:")
 
     for (var item of shoppingCart) {
-      console.log(`- ${item}`);
+      console.log(`- ${item}`)
     }
 
-    console.log(); // Add space after cart contents
+    console.log() // Add space after cart contents
   } else if (choice == "3") {
-    addingItems = false;
+    addingItems = false
   } else {
-    console.log("Invalid option, try again...");
+    console.log("Invalid option, try again...")
   }
 }
 ```

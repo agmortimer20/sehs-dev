@@ -32,50 +32,50 @@ This activity will take you a little bit deeper into how variables can be used. 
 
 ```javascript
 // Video game demo
-console.log("--- Battle Simulator ---");
-var playerHealth = 100;
-var enemyHealth = 100;
-var enemyAttackDamage = 20;
-var potions = 3;
+console.log("--- Battle Simulator ---")
+var playerHealth = 100
+var enemyHealth = 100
+var enemyAttackDamage = 20
+var potions = 3
 
-console.log(`Health: ${playerHealth}`);
-console.log(`Enemy health: ${enemyHealth}`);
-console.log();
+console.log(`Health: ${playerHealth}`)
+console.log(`Enemy health: ${enemyHealth}`)
+console.log()
 
-console.log("Round 1");
-console.log("Player attacks.");
+console.log("Round 1")
+console.log("Player attacks.")
 // Subtract 15 from enemyHealth. Save new enemyHealth value.
-enemyHealth = enemyHealth - 15;
-console.log(`You did 15 damage! Enemy health: ${enemyHealth}`);
+enemyHealth = enemyHealth - 15
+console.log(`You did 15 damage! Enemy health: ${enemyHealth}`)
 // Subtract enemyAttackDamage from player health. Save new playerHealth value.
-playerHealth = playerHealth - enemyAttackDamage;
+playerHealth = playerHealth - enemyAttackDamage
 console.log(
   `Enemy did ${enemyAttackDamage} damage! Player health: ${playerHealth}`
-);
-console.log();
+)
+console.log()
 
-console.log("Using potion...");
-playerHealth = playerHealth + 10;
-potions = potions - 1;
-console.log(`Player health: ${playerHealth}. Potions left: ${potions}`);
+console.log("Using potion...")
+playerHealth = playerHealth + 10
+potions = potions - 1
+console.log(`Player health: ${playerHealth}. Potions left: ${potions}`)
 
-console.log("Buying one potion...");
-potions++; // Increment operator - Increases number value stored in variable by one
-console.log(`Potions left: ${potions}`);
-console.log(`Using the potion!!!`);
-potions--; // Decrement operators - Decreases number value by one
+console.log("Buying one potion...")
+potions++ // Increment operator - Increases number value stored in variable by one
+console.log(`Potions left: ${potions}`)
+console.log(`Using the potion!!!`)
+potions-- // Decrement operators - Decreases number value by one
 
-console.log("\n\n"); // What does this do??? Google search "\n javascript"
+console.log("\n\n") // What does this do??? Google search "\n javascript"
 
 // Bank account demo
-console.log("--- Banking Simulator ---");
-var accountName = "Checking Account";
-var accountBalance = 100.5;
+console.log("--- Banking Simulator ---")
+var accountName = "Checking Account"
+var accountBalance = 100.5
 
-console.log(`${accountName} balance: $${accountBalance}`);
-console.log(`Depositing $99.01 to ${accountName}`);
-accountBalance = accountBalance + 99.01;
-console.log(`${accountName} balance: $${accountBalance}`);
+console.log(`${accountName} balance: $${accountBalance}`)
+console.log(`Depositing $99.01 to ${accountName}`)
+accountBalance = accountBalance + 99.01
+console.log(`${accountName} balance: $${accountBalance}`)
 ```
 
 ### Debug

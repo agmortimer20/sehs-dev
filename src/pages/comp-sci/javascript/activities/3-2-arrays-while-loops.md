@@ -15,14 +15,14 @@ We can use loops to iterate through elements of an array. The key is to access e
 **Example**
 
 ```js
-var games = ["Skyrim", "Overwatch", "Fortnite"];
-var number = 0;
+var games = ["Skyrim", "Overwatch", "Fortnite"]
+var number = 0
 
-console.log(games[number]); // Same as games[0]
+console.log(games[number]) // Same as games[0]
 
-number++;
+number++
 
-console.log(games[number]); // Same as games[1]
+console.log(games[number]) // Same as games[1]
 ```
 
 ### Array.length
@@ -30,9 +30,9 @@ console.log(games[number]); // Same as games[1]
 It's helpful to know how many elements exist in an array, so we know how many times we need to iterate. Arrays have a property named `.length` that is a number value that represents how many elements are in the array.
 
 ```js
-var toys = ["train", "car", "slingshot"];
+var toys = ["train", "car", "slingshot"]
 
-console.log(toys.length); // Outputs 3
+console.log(toys.length) // Outputs 3
 ```
 
 ### Skills to Practice
@@ -53,65 +53,65 @@ console.log(toys.length); // Outputs 3
 ### Code
 
 ```javascript
-var readline = require("readline-sync");
+var readline = require("readline-sync")
 
-console.log("--- Sodas App ---");
+console.log("--- Sodas App ---")
 
-var sodas = [];
-var i = 0; // Use i to access the array indexes dynamically
+var sodas = []
+var i = 0 // Use i to access the array indexes dynamically
 
 // Let user add 5 sodas to the list
 while (i < 5) {
-  var soda = readline.question("Add a soda to your list: ");
-  sodas[i] = soda;
+  var soda = readline.question("Add a soda to your list: ")
+  sodas[i] = soda
 
-  i++;
+  i++
 }
 
-i = 0; // Reset i back to 0
+i = 0 // Reset i back to 0
 
 // Show sodas in a list
-console.log("\nHere are your sodas:");
+console.log("\nHere are your sodas:")
 
 // sodas.length returns the number of elements in the array
 while (i < sodas.length) {
-  console.log(`- ${sodas[i]}`);
-  i++;
+  console.log(`- ${sodas[i]}`)
+  i++
 }
 
 // End sodas app
-console.log("\n\n");
+console.log("\n\n")
 
-console.log("--- Todo App ---");
+console.log("--- Todo App ---")
 
-i = 0;
-var todoList = [];
-var addingTodos = true;
+i = 0
+var todoList = []
+var addingTodos = true
 
 while (addingTodos) {
-  console.log("-Menu-");
-  console.log("1) Add a todo item");
-  console.log("2) Finish");
+  console.log("-Menu-")
+  console.log("1) Add a todo item")
+  console.log("2) Finish")
 
-  var choice = readline.question("-> ");
+  var choice = readline.question("-> ")
 
   if (choice == "1" || choice == "add") {
-    todoList[i] = readline.question("Enter todo item: ");
-    i++;
+    todoList[i] = readline.question("Enter todo item: ")
+    i++
   } else if (choice == "2" || choice == "finish") {
-    addingTodos = false;
+    addingTodos = false
   } else {
-    console.log("Invalid option...");
+    console.log("Invalid option...")
   }
 }
 
-i = 0;
+i = 0
 
-console.log("\nTodo list: ");
+console.log("\nTodo list: ")
 
 while (i < todoList.length) {
-  console.log(`- ${todoList[i]}`);
-  i++;
+  console.log(`- ${todoList[i]}`)
+  i++
 }
 ```
 
