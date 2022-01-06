@@ -23,9 +23,8 @@ In programming, functions can use a keyword called `return`. We call statements 
 ### Example
 
 ```python
-def add(num1, num2) {
+def add(num1, num2):
     return num1 + num2
-}
 ```
 
 In the example above, the add function _returns_ the sum of the num1 and num2 parameters. Just like any of the other functions we've used, we can assign the return value to a variable.
