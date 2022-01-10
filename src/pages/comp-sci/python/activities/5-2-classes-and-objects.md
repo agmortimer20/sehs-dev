@@ -84,7 +84,7 @@ other_dog = Dog()
 other_dog.name = input("What is your dog's name? ")
 other_dog.breed = input("What breed is it? ")
 
-print(f"So, you have a {other_dog.breed} named {my_dog.name}.")
+print(f"So, you have a {other_dog.breed} named {other_dog.name}.")
 other_dog.bark()
 other_dog.sleep()
 ```
