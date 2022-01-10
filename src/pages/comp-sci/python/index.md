@@ -69,3 +69,5 @@ title: Python Fundamentals
 ### Part 5 - Modules and Object-Oriented Programming
 
 [5.1 Importing Modules](activities/5-1-importing-modules)
+
+[5.2 Classes and Objects](activities/5-2-classes-and-objects)
