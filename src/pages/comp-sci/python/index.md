@@ -65,3 +65,7 @@ title: Python Fundamentals
 [4.2 Function Parameters](activities/4-2-function-parameters)
 
 [4.3 Return Statements](activities/4-3-function-return)
+
+### Part 5 - Modules and Object-Oriented Programming
+
+[5.1 Importing Modules](activities/5-1-importing-modules)
