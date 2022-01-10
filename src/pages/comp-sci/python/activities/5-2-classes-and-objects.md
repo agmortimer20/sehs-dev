@@ -54,6 +54,9 @@ class Dog:
     name = ""
     breed = ""
 
+    # self is a special parameter defined in a method.
+    # Use self to access the instance variables and methods
+    # defined in the class.
     def bark(self):
         print(f"{self.name}: Woof woof!")
 
@@ -71,6 +74,8 @@ my_dog.name = "Fido"
 my_dog.breed = "Pit bull"
 
 print(f"My dog, {my_dog.name}, is a {my_dog.breed}")
+# You don't need to pass an argument for self, Python
+# will automatically assign the current object to self.
 my_dog.bark()
 my_dog.sleep()
 print()
