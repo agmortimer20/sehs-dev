@@ -47,7 +47,7 @@ Using a class, I can begin to design my dog application by defining a dog. I’m
 
 ### Code
 
-**main.py**
+**dog.py**
 
 ```python
 class Dog:
