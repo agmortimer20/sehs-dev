@@ -71,3 +71,5 @@ title: Python Fundamentals
 [5.1 Importing Modules](activities/5-1-importing-modules)
 
 [5.2 Classes and Objects](activities/5-2-classes-and-objects)
+
+[5.3 Constructors and Self](activities/5-3-constructors-self)
