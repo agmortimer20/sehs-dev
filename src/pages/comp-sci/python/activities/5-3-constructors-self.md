@@ -185,7 +185,7 @@ while player_pokemon.hp > 0 and enemy_pokemon.hp > 0:
 if won_battle:
     gained_xp = randint(5, 10)
     player_pokemon.xp += gained_xp
-    print(f"You win! {pokemon1.name} gained {gained_xp}xp!")
+    print(f"You win! {player_pokemon.name} gained {gained_xp}xp!")
 else:
     print("You lose!")
 
