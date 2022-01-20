@@ -36,9 +36,7 @@ var item = "peppers"
 
 console.log(`Hello, my name is ${name}`)
 console.log(`${name} likes the stinkiest of ${food}.`)
-console.log(
-  `${name} likes ${food} so much, he/she eats it out of the garbage!`
-)
+console.log(`${name} likes ${food} so much, he/she eats it out of the garbage!`)
 console.log()
 
 console.log(`Peter Piper picked a peck of pickled ${item}`)
@@ -57,17 +55,13 @@ var newBalance = balance - withdrawAmount
 
 console.log(`You have a balance of ${balance} in your bank account.`)
 // Literal dollar sign in front of template expression
-console.log(
-  `If you withdraw $${withdrawAmount}, you will have $${newBalance}.`
-)
+console.log(`If you withdraw $${withdrawAmount}, you will have $${newBalance}.`)
 console.log()
 
 var health = 100
 var damage = 55.95
 
-console.log(
-  `You've took ${damage} damage. You have ${health - damage} health left.`
-)
+console.log(`You've took ${damage} damage. You have ${health - damage} health left.`)
 ```
 
 ### Debug

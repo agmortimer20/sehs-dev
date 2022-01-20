@@ -70,15 +70,9 @@ console.log(`Square root of 4 = ${Math.sqrt(4)}\n`)
 console.log("- Math.round(number), Math.floor(number), Math.ceil(number)")
 console.log("- Round decimal, always round down, always round up")
 console.log("Number: 3.534")
-console.log(
-  `Round: ${Math.round(3.534)}, Floor: ${Math.floor(3.534)}, Ceil: ${Math.ceil(
-    3.534
-  )}\n`
-)
+console.log(`Round: ${Math.round(3.534)}, Floor: ${Math.floor(3.534)}, Ceil: ${Math.ceil(3.534)}\n`)
 
-console.log(
-  "- Math.random() - Generate a random number between 0-1 (exclusive)"
-)
+console.log("- Math.random() - Generate a random number between 0-1 (exclusive)")
 var randomNumber = Math.floor(Math.random() * 100) // Generate a random number from 0-99
 console.log(`Randomly generated number: ${randomNumber}\n`)
 ```

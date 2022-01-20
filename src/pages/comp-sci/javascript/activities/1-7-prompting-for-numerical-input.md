@@ -62,9 +62,7 @@ console.log("--- Age to Months Calculator ---")
 var age = readline.question("Enter your age: ")
 age = parseInt(age)
 
-console.log(
-  `You are ${age} years old. That's ${age * 12} months old, you old fart!\n`
-)
+console.log(`You are ${age} years old. That's ${age * 12} months old, you old fart!\n`)
 
 // Square area calculator
 console.log("--- Square Area Calculator ---")

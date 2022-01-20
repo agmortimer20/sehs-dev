@@ -50,12 +50,8 @@ console.log(`${name}, that's fun to say! ${name}, ${name}...`)
 var answer = readline.question("Does someone need a hug? ")
 console.log(`${answer}!? I just wanted a hug!`)
 
-var favoriteColor = readline.question(
-  "Buddy the Elf, what's your favorite color? "
-)
-console.log(
-  `That's a nice ${favoriteColor} outfit, very ${favoriteColor}-y.\n`
-)
+var favoriteColor = readline.question("Buddy the Elf, what's your favorite color? ")
+console.log(`That's a nice ${favoriteColor} outfit, very ${favoriteColor}-y.\n`)
 
 // Secret Agent ID Program
 console.log("----- SECRET AGENT CONSOLE -----")

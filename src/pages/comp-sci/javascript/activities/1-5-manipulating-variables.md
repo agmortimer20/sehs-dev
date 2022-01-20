@@ -49,9 +49,7 @@ enemyHealth = enemyHealth - 15
 console.log(`You did 15 damage! Enemy health: ${enemyHealth}`)
 // Subtract enemyAttackDamage from player health. Save new playerHealth value.
 playerHealth = playerHealth - enemyAttackDamage
-console.log(
-  `Enemy did ${enemyAttackDamage} damage! Player health: ${playerHealth}`
-)
+console.log(`Enemy did ${enemyAttackDamage} damage! Player health: ${playerHealth}`)
 console.log()
 
 console.log("Using potion...")

@@ -39,9 +39,7 @@ Your new workspace will contain an empty file named _index.js_. Starting on line
 console.log("Hello, world!")
 console.log("This class is taught by Mr. Mortimer.")
 console.log("People say I look like Ethan from h3h3.")
-console.log(
-  "Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com"
-)
+console.log("Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com")
 console.log()
 
 console.log("What is the answer to life, the universe, and everything?")

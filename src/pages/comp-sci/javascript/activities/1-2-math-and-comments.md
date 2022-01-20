@@ -49,9 +49,7 @@ We will also learn how to write comments in JavaScript. Comments serve two purpo
 // Comments are ignored by the compiler.
 
 // Addition
-console.log(
-  "I have two apples. I find another apple. How many apples do I have?"
-)
+console.log("I have two apples. I find another apple. How many apples do I have?")
 console.log(2 + 1)
 console.log()
 
@@ -60,9 +58,7 @@ console.log(1000 + 500.96)
 console.log()
 
 // Subtraction
-console.log(
-  "I'm hungry and I want to eat an apple. How many apples will I have left?"
-)
+console.log("I'm hungry and I want to eat an apple. How many apples will I have left?")
 console.log(3 - 1)
 console.log()
 
