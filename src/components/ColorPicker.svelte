@@ -14,6 +14,7 @@
     let greenHex = green.toString(16);
     let blueHex = blue.toString(16);
     hex =
+      "#" +
       (redHex.length == 1 ? "0" + redHex : redHex) +
       (greenHex.length == 1 ? "0" + greenHex : greenHex) +
       (blueHex.length == 1 ? "0" + blueHex : blueHex);
