@@ -5,8 +5,19 @@
   let green = 0;
   let blue = 0;
   let alpha = 1;
+  let hex = "#000000";
   let alphaTooltip;
   $: rgba = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+  $: {
+    // Generate hex value from rgb decimal values
+    let redHex = red.toString(16);
+    let greenHex = green.toString(16);
+    let blueHex = blue.toString(16);
+    hex =
+      (redHex.length == 1 ? "0" + redHex : redHex) +
+      (greenHex.length == 1 ? "0" + greenHex : greenHex) +
+      (blueHex.length == 1 ? "0" + blueHex : blueHex);
+  }
 
   onMount(async () => {
     const Tooltip = await import("bootstrap/js/dist/tooltip");
@@ -62,6 +73,7 @@
 </div>
 <div class="col-sm col-md-4 p-1">
   <div class="color-square" style="background-color: {rgba};" />
+  <p>Hex: {hex}</p>
 </div>
 
 <style>
