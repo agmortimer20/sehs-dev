@@ -97,9 +97,7 @@ console.log(`Is my name Mr. Mertens? ${name == "Mr. Mertens"}`)
 console.log(`My name is not Mr. Merriman: ${name != "Mr. Merriman"}`)
 
 console.log(`Am I old enough to drive? ${age >= 16}`)
-console.log(
-  `Do I have enough to buy a Dodge Challenger? ${bankAccount > 31000}`
-)
+console.log(`Do I have enough to buy a Dodge Challenger? ${bankAccount > 31000}`)
 
 console.log(`${name} is a teacher: ${isATeacher == true}`)
 console.log(`${name} is a millionaire: ${isAMillionaire}`)

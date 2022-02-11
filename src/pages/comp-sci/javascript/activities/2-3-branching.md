@@ -24,9 +24,11 @@ var number = 100
 
 if (number > 100) {
   console.log("number is higher than 100")
-} else if (number == 100) {
+} 
+else if (number == 100) {
   console.log("number is 100")
-} else {
+} 
+else {
   console.log("number is less than 100")
 }
 ```
@@ -57,11 +59,11 @@ age = parseInt(age)
 
 if (age >= 16) {
   console.log("You are old enough to drive!")
-} else if (age == 15) {
-  console.log(
-    "You can't drive on your own yet, but you are eligible for a learners permit."
-  )
-} else {
+} 
+else if (age == 15) {
+  console.log("You can't drive on your own yet, but you are eligible for a learners permit.")
+} 
+else {
   console.log("I'm sorry, but you are not old enough to drive")
 }
 
@@ -81,19 +83,22 @@ var option = readline.question("Enter your option (1,2,3): ")
 
 if (option == "1") {
   console.log(`Your balance is $${balance}.`)
-} else if (option == "2") {
+} 
+else if (option == "2") {
   var deposit = readline.question("How much would you like to deposit? $")
   deposit = parseFloat(deposit)
   balance = balance + deposit
   console.log(`Thank you for your deposit of $${deposit}.`)
   console.log(`Your balance is now $${balance}.`)
-} else if (option == "3") {
+} 
+else if (option == "3") {
   var withdraw = readline.question("How much would you like to withdraw? $")
   withdraw = parseFloat(withdraw)
   balance = balance - withdraw
   console.log(`Thank you for your withdraw of $${withdraw}.`)
   console.log(`Your balance is now $${balance}.`)
-} else {
+} 
+else {
   console.log("Invalid option. Exiting...")
 }
 ```
