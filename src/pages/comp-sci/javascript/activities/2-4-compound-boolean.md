@@ -85,21 +85,26 @@ if (choice == "1" || choice == "attack") {
   console.log(`Enemy has ${enemyHealth} health left.\n`)
   console.log(`Enemy did ${enemyAttack} damage!`)
   console.log(`You have ${playerHealth} health left.\n`)
-} else if (choice == "2" || choice == "run") {
+} 
+else if (choice == "2" || choice == "run") {
   console.log(`You escape like a big baby...`)
   escaped = true
-} else {
+} 
+else {
   console.log(`Invalid option. Exiting battle...`)
 }
 
 // escaped is the same as escaped == true
 if (escaped) {
   console.log("Bye bye! Back home to Mommy!")
-} else if (playerHealth > enemyHealth) {
+} 
+else if (playerHealth > enemyHealth) {
   console.log("You are beating the enemy!")
-} else if (enemyHealth > playerHealth) {
+} 
+else if (enemyHealth > playerHealth) {
   console.log("Be careful, the enemy is beating you!")
-} else {
+} 
+else {
   // Fought the enemy, but health is the same value
   console.log("Battle is tied!")
 }
@@ -124,9 +129,11 @@ console.log(`And the lottery number is....\n${lotteryNumber}!`)
 // Digits match -> $3,000
 if (entry == lotteryNumber) {
   console.log("Exact match! You win the grand prize of $10,000!")
-} else if (lotteryDigit1 == entryDigit2 && lotteryDigit2 == entryDigit1) {
+} 
+else if (lotteryDigit1 == entryDigit2 && lotteryDigit2 == entryDigit1) {
   console.log("Your digits match! You win $3,000!")
-} else {
+} 
+else {
   console.log("No match. Better luck next time!")
 }
 ```
