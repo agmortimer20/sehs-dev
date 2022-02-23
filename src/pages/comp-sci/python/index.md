@@ -38,7 +38,7 @@ title: Python Fundamentals
 
 [2.4 Compound Boolean Expressions](activities/2-4-compound-boolean)
 
-[2.5 Nested If Statements](activities/2-5-nested-if-statments)
+[2.5 Nested If Statements](activities/2-5-nested-if-statements)
 
 [2.6 While Loops](activities/2-6-while-loops)
 
