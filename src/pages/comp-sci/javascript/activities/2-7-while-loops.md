@@ -101,17 +101,19 @@ while (orderingFood) {
 
   if (choice == "1") {
     console.log("Placing order for one Crangis McNugget\n")
-  } else if (choice == "2") {
+  } 
+  else if (choice == "2") {
     console.log("Placing order for one JaCrispy Chicken sandwich\n")
-  } else if (choice == "3") {
+  } 
+  else if (choice == "3") {
     console.log("Placing order for one Burger with McBasketball sauce\n")
-  } else if (choice == "4") {
+  } 
+  else if (choice == "4") {
     var time = Math.floor(Math.random() * 50 + 10) // 10 - 59
-    console.log(
-      `Your order has been placed! It will be ready in ${time} minutes.`
-    )
+    console.log(`Your order has been placed! It will be ready in ${time} minutes.`)
     orderingFood = false
-  } else {
+  } 
+  else {
     console.log("Invalid option. Please try again...\n")
   }
 }
