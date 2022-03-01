@@ -40,9 +40,11 @@ while (guess != secretNumber) {
 
   if (guess == secretNumber) {
     console.log(`Correct! It took you ${tries} tries!`)
-  } else if (guess > secretNumber) {
+  } 
+  else if (guess > secretNumber) {
     console.log("Wrong! Too high.")
-  } else {
+  } 
+  else {
     console.log("Wrong! Too low.")
   }
 }
