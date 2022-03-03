@@ -76,9 +76,11 @@ while (playing) {
 
   if (randomNumber == 0) {
     var computerHand = "rock"
-  } else if (randomNumber == 1) {
+  } 
+  else if (randomNumber == 1) {
     var computerHand = "paper"
-  } else if (randomNumber == 2) {
+  } 
+  else if (randomNumber == 2) {
     var computerHand = "scissors"
   }
 
@@ -86,31 +88,38 @@ while (playing) {
 
   if (playerHand == computerHand) {
     console.log("Tie!")
-  } else if (playerHand == "rock") {
+  } 
+  else if (playerHand == "rock") {
     if (computerHand == "paper") {
       console.log("You lose! Paper covers rock!\n")
       losses++
-    } else {
+    } 
+    else {
       console.log("You win! Rock crushes scissors!\n")
       wins++
     }
-  } else if (playerHand == "paper") {
+  } 
+  else if (playerHand == "paper") {
     if (computerHand == "scissors") {
       console.log("You lose! Scissors cuts paper!\n")
       losses++
-    } else {
+    } 
+    else {
       console.log("You win! Paper covers rock!\n")
       wins++
     }
-  } else if (playerHand == "scissors") {
+  } 
+  else if (playerHand == "scissors") {
     if (computerHand == "rock") {
       console.log("You lose! Rock crushes scissors!\n")
       losses++
-    } else {
+    } 
+    else {
       console.log("You win! Scissors cuts paper!\n")
       wins++
     }
-  } else {
+  } 
+  else {
     console.log("You typed something wrong, dummy...\n")
   }
 
@@ -121,7 +130,8 @@ while (playing) {
 
   if (choice == "no") {
     playing = false
-  } else {
+  } 
+  else {
     round++
   }
 
