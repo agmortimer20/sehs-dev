@@ -61,9 +61,11 @@ function greet() {
 
   if (mood == "good") {
     console.log("Glad to hear it!")
-  } else if (mood == "bad") {
+  } 
+  else if (mood == "bad") {
     console.log("Sorry to hear that :(")
-  } else {
+  } 
+  else {
     console.log("Well then...")
   }
 }
@@ -91,9 +93,8 @@ function songThatNeverEnds() {
   var answer = ""
 
   while (answer != "no") {
-    console.log(
-      "\nIt's the song that never ends, it goes on and on my friends!"
-    )
+    console.log("\nIt's the song that never ends.")
+    console.log("It goes on and on my friends!")
     console.log("Some people started singing it not knowing what it was,")
     console.log("but they'll continue singing it, that's just because...\n")
 
@@ -119,15 +120,20 @@ while (choice != "5") {
 
   if (choice == "1") {
     greet()
-  } else if (choice == "2") {
+  } 
+  else if (choice == "2") {
     dontInvokeThisFunction()
-  } else if (choice == "3") {
+  } 
+  else if (choice == "3") {
     bottlesOfMilkSong()
-  } else if (choice == "4") {
+  } 
+  else if (choice == "4") {
     songThatNeverEnds()
-  } else if (choice == "5") {
+  } 
+  else if (choice == "5") {
     console.log("Goodbye.")
-  } else {
+  } 
+  else {
     console.log("Invalid option.")
   }
 }

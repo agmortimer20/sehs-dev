@@ -98,9 +98,11 @@ while (addingTodos) {
   if (choice == "1" || choice == "add") {
     todoList[i] = readline.question("Enter todo item: ")
     i++
-  } else if (choice == "2" || choice == "finish") {
+  } 
+  else if (choice == "2" || choice == "finish") {
     addingTodos = false
-  } else {
+  } 
+  else {
     console.log("Invalid option...")
   }
 }

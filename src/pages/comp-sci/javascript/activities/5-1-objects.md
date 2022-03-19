@@ -116,9 +116,11 @@ console.log(`The ${dealerCard2.value} of ${dealerCard2.suit}\n`);
 
 if (playerTotal > dealerTotal) {
   console.log("You win!");
-} else if (playerTotal == dealerTotal) {
+} 
+else if (playerTotal == dealerTotal) {
   console.log("Tie!");
-} else {
+} 
+else {
   console.log("You lose!");
 }
 ```

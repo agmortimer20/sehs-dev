@@ -99,28 +99,32 @@ while (choice != "6") {
     answer = squareNumber(number)
 
     console.log(`${number} squared is ${answer}\n`)
-  } else if (choice == "2") {
+  } 
+  else if (choice == "2") {
     number = parseFloat(readline.question("Enter a number: "))
     var number2 = parseFloat(readline.question("Enter a number: "))
     answer = subtract(number, number2)
 
     console.log(`${number} minus ${number2} equals ${answer}\n`)
-  } else if (choice == "3") {
+  } 
+  else if (choice == "3") {
     number = parseFloat(readline.question("Enter a number: "))
     console.log(`${number} months equals ${monthsToYears(number)} years\n`)
-  } else if (choice == "4") {
+  } 
+  else if (choice == "4") {
     number = parseFloat(readline.question("Enter a number: "))
     console.log(`${number} years equals ${yearsToMonths(number)} months\n`)
-  } else if (choice == "5") {
+  } 
+  else if (choice == "5") {
     var die1 = rollDie()
     var die2 = rollDie()
 
-    console.log(
-      `You rolled a ${die1} and a ${die2} for a total of ${die1 + die2}\n`
-    )
-  } else if (choice == "6") {
+    console.log(`You rolled a ${die1} and a ${die2} for a total of ${die1 + die2}\n`)
+  } 
+  else if (choice == "6") {
     console.log("Goodbye")
-  } else {
+  } 
+  else {
     console.log("Invalid option...")
   }
 }

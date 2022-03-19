@@ -113,7 +113,8 @@ while (addingItems) {
   if (choice == "1") {
     shoppingCart[i] = readline.question("Add an item to buy: ")
     i++ // Go to the next index
-  } else if (choice == "2") {
+  } 
+  else if (choice == "2") {
     console.log("\nShopping cart:")
 
     for (var item of shoppingCart) {
@@ -121,9 +122,11 @@ while (addingItems) {
     }
 
     console.log() // Add space after cart contents
-  } else if (choice == "3") {
+  } 
+  else if (choice == "3") {
     addingItems = false
-  } else {
+  } 
+  else {
     console.log("Invalid option, try again...")
   }
 }

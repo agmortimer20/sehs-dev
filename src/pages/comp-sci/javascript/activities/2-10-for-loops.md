@@ -97,10 +97,12 @@ for (var i = 1 i <= numberOfRounds i++) {
   if (random == 0) {
     var sign = "+"
     var correctAnswer = operand1 + operand2
-  } else if (random == 1) {
+  } 
+  else if (random == 1) {
     var sign = "-"
     var correctAnswer = operand1 - operand2
-  } else if (random == 2) {
+  } 
+  else if (random == 2) {
     var sign = "*"
     var correctAnswer = operand1 * operand2
   }
@@ -112,7 +114,8 @@ for (var i = 1 i <= numberOfRounds i++) {
   if (playerAnswer == correctAnswer) {
     console.log("Correct!")
     numberCorrect++
-  } else {
+  } 
+  else {
     console.log(`Wrong! The correct answer is ${correctAnswer}`)
     numberWrong++
   }
