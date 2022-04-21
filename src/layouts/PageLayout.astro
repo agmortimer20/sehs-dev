@@ -1,4 +1,6 @@
 ---
+    import "../styles/global.scss";
+    
     import Navbar from '../components/Navbar.svelte'
 
     let { 
@@ -7,8 +9,6 @@
         content = {},
         navMargin = "3"
     } = Astro.props
-
-    let dotMin = process.env['NODE_ENV'] !== "development" ? ".min" : "";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -17,13 +17,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href={Astro.resolve('../styles/global.scss')}>
-    <title>{'title' in content ? content.title : title} | Sehs.Dev</title>
-    <script src=`/assets/js/prism${dotMin}.js` defer></script>
+    <title>{content.title ? content.title : title} | SEHS.dev</title>
+    <script>
+        import "../scripts/prism.js";
+    </script>
 </head>
 <body class="line-numbers match-braces">
     <Navbar margin={navMargin} client:load />
-    <div class={'container' in content ? content.container : container}>
+    <div class={content.container ? content.container : container}>
         <slot/>
     </div>
 
