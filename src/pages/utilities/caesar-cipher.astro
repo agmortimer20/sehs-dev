@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CaesarCipherDial from '../../components/CaesarCipherDial.svelte';
+---
+
+<PageLayout title="Caesar Cipher" navMargin="3" container="container">
+    <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-auto">
+            <img src="/assets/img/caesar-icon.png" class="img-title" />
+        </div>
+        <div class="col-auto">
+            <h1 class="text-center display-5">Caesar Cipher</h1>
+        </div>
+    </div>
+    <CaesarCipherDial client:load />
+</PageLayout>
+
+<style>
+    .img-title {
+        max-width: 125px;
+    }
+</style>
