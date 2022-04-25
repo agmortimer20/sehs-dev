@@ -22,7 +22,7 @@ There are two functions for converting a string into a number:
 ```js
 parseInt("32") // "32" converts to 32
 parseFloat("100.4") // "100.4" converts to 100.4
-parseFloat("32.5") // "32.5" converts to 32. The decimal gets truncated.
+parseInt("32.5") // "32.5" converts to 32. The decimal gets truncated.
 ```
 
 ### Skills to Practice
