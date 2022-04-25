@@ -20,13 +20,13 @@
   })
 
   function increaseDial() {
-    degree += 13.8
+    degree += 13.846
     key++
     anime({ targets: "#dial-inner", rotate: degree })
   }
 
   function decreaseDial() {
-    degree -= 13.8
+    degree -= 13.846
     key--
     anime({ targets: "#dial-inner", rotate: degree })
   }
