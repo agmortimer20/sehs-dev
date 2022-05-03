@@ -6,13 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "deploy": "astro build && firebase deploy"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/svelte": "^0.1.1",
     "astro": "^1.0.0-beta.14",
-    "firebase": "^9.6.1",
     "sass": "^1.50.1"
   },
   "dependencies": {
