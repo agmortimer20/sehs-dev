@@ -66,7 +66,7 @@ print(f"You've taken {damage} damage. You have {health - damage} health left.")
 
 ### Debug
 
-"""
+```
 Hello, my name is Anthony
 Anthony likes the stinkiest of Steak.
 Anthony likes Steak so much, he/she eats it out of the garbage!
@@ -80,7 +80,7 @@ You have a balance of 35.25 in your bank account.
 If you withdraw $0, you will have $35.25.
 
 You've taken 55.95 damage. You have 44.05 health left.
-"""
+```
 
 ## Tips, Tricks, and Reflection
 

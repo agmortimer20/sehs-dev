@@ -80,7 +80,7 @@ print(f"{account_name} balance: {account_balance}")
 
 ### Debug
 
-"""
+```
 --- Battle Simulator ---
 Health: 100
 Enemy health: 100
@@ -100,7 +100,7 @@ Using the potion!!!
 Checking Account balance: $100.5
 Depositing $99.01 to Checking Account
 Checking Account balance: $199.51
-"""
+```
 
 ## Tips, Tricks, and Reflection
 
