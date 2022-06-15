@@ -17,3 +17,5 @@ title: "Exploring Computer Engineering Summer Camp"
 ## Projects
 
 1. [Stoplight](stoplight)
+2. Nine Pixel Animation Machine (Coming Soon)
+3. [Reaction Game](reaction-game)
