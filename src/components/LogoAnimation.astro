@@ -1,7 +1,7 @@
 ---
 ---
 <script>
-  import * as p5 from 'p5'
+  let p5 = await import ("p5")
 
   const sketch = (p) => {
     let toggled = false;
@@ -34,7 +34,7 @@
     };
   };
 
-  new p5(sketch, "logo-animation");
+  new p5.default(sketch, "logo-animation");
 </script>
 
 <div id="logo-animation" class="d-flex justify-content-center" />
